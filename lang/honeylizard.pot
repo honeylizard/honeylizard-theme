@@ -1,0 +1,351 @@
+# Honeylizard Translations
+# Copyright (C) 2015 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+# Lisa Bernhardt <lisa@honeylizard.com>, 2017.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Honeylizard 7.0\n"
+"Report-Msgid-Bugs-To: http://www.honeylizard.com\n"
+"POT-Creation-Date: 2017-06-27 15:41-0400\n"
+"PO-Revision-Date: 2017-06-27 15:48-0500\n"
+"Last-Translator: Lisa Bernhardt <lisa@honeylizard.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: customizer.php:13
+msgid "Theme Specific Settings"
+msgstr ""
+
+#: customizer.php:24
+msgid "Meta Keywords"
+msgstr ""
+
+#: customizer.php:25 customizer.php:38
+msgid "Applies to the meta information of the website."
+msgstr ""
+
+#: customizer.php:37
+msgid "Meta Description"
+msgstr ""
+
+#: customizer.php:50
+msgid "Site Logo"
+msgstr ""
+
+#: customizer.php:51
+msgid "Applies to the header of the website. Logo must not exceed 80px tall."
+msgstr ""
+
+#: functions.php:109
+msgid "Footer"
+msgstr ""
+
+#: functions.php:111
+msgid ""
+"Widgets in this area will be shown in the footer. This is not shown on the "
+"front page."
+msgstr ""
+
+#: functions.php:118
+msgid "Right Hand Sidebar"
+msgstr ""
+
+#: functions.php:120
+msgid "Widgets in this area will be shown on the right-hand side."
+msgstr ""
+
+#: functions.php:127
+msgid "Footer (Front-Page)"
+msgstr ""
+
+#: functions.php:129
+msgid "Widgets in this area will be shown in the front page footer."
+msgstr ""
+
+#: functions.php:136
+msgid "Social Bar (Front-Page)"
+msgstr ""
+
+#: functions.php:138
+msgid ""
+"Widgets in this area will be shown in the front page right below the content."
+msgstr ""
+
+#: functions.php:193
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:290
+msgid "Menu Description"
+msgstr ""
+
+#: functions.php:292
+msgid ""
+"This field is used within a navigation menu and provides extra information "
+"for users."
+msgstr ""
+
+#: functions.php:293
+msgid "Show on Home Page"
+msgstr ""
+
+#: functions.php:295
+msgid ""
+"Toggle whether the category appears on the front/home page. It will show the "
+"name of the cateogry, the description, along with a set of the latest posts "
+"for that category."
+msgstr ""
+
+#: lib/classes/Comment.php:63
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Date Format
+#: lib/classes/Comment.php:78 lib/classes/Post.php:394
+msgid "F j, Y"
+msgstr ""
+
+#. Time Format
+#: lib/classes/Comment.php:79 lib/classes/Post.php:395
+msgid "g:i a"
+msgstr ""
+
+#. GMT Date/Time Format
+#: lib/classes/Comment.php:87 lib/classes/Post.php:403
+msgid "c"
+msgstr ""
+
+#: lib/classes/Comment.php:129
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: lib/classes/Comment.php:132
+msgid "(Edit)"
+msgstr ""
+
+#: lib/classes/Comment.php:170 lib/classes/Page.php:100
+#: lib/classes/Post.php:222
+msgid "Edit"
+msgstr ""
+
+#: lib/classes/Error_Page.php:18
+msgid ""
+"The page that you are looking for does not exist on this website. You may "
+"have accidentally mistype the page address, or followed an expired link. "
+"Anyway, we will help you get back on track. Why not try to search for the "
+"page you were looking for?"
+msgstr ""
+
+#: lib/classes/Error_Page.php:22
+msgid "Page Not Found"
+msgstr ""
+
+#: lib/classes/Header.php:47
+msgid "Skip to content"
+msgstr ""
+
+#: lib/classes/Header.php:51
+msgid "Top Menu"
+msgstr ""
+
+#: lib/classes/List_Comment.php:40
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/classes/List_Comment.php:54
+msgid "&laquo; Previous Comments"
+msgstr ""
+
+#: lib/classes/List_Comment.php:55
+msgid "Next Comments &raquo;"
+msgstr ""
+
+#: lib/classes/List_Comment.php:58
+msgid "No thoughts on this yet."
+msgstr ""
+
+#: lib/classes/List_Comment.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#: lib/classes/List_Comment.php:84
+msgid "Comments: "
+msgstr ""
+
+#: lib/classes/List_Post.php:35
+msgid "&laquo; Newer Entries"
+msgstr ""
+
+#: lib/classes/List_Post.php:36
+msgid "Older Entries &raquo;"
+msgstr ""
+
+#: lib/classes/List_Post.php:58
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: lib/classes/List_Post.php:60
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: lib/classes/List_Post.php:64
+msgid "Nothing Found"
+msgstr ""
+
+#: lib/classes/List_Post.php:90
+msgid "Search Results: "
+msgstr ""
+
+#: lib/classes/List_Post.php:93
+msgid "Category: "
+msgstr ""
+
+#: lib/classes/List_Post.php:95
+msgid "Tag: "
+msgstr ""
+
+#: lib/classes/List_Post.php:97
+msgid "Author"
+msgstr ""
+
+#: lib/classes/List_Post.php:99
+msgid "Archive: "
+msgstr ""
+
+#: lib/classes/List_Post.php:102
+msgid "Welcome"
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:20
+msgid "A custom menu with a description."
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:22
+msgid "Custom Menu &amp; Description"
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:133
+#, php-format
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:148
+msgid "Edit Menu"
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:173
+msgid "Title:"
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:177
+msgid "Description:"
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:181
+msgid "Select Menu:"
+msgstr ""
+
+#: lib/classes/Menu_Widget.php:183
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: lib/classes/Post.php:99
+msgid "Read More"
+msgstr ""
+
+#: lib/classes/Post.php:244
+msgid " Comments"
+msgstr ""
+
+#: lib/classes/Post.php:305
+msgid "Posted in "
+msgstr ""
+
+#: lib/classes/Post.php:331
+msgid "Tagged in "
+msgstr ""
+
+#: lib/classes/Post.php:398
+msgid "Published "
+msgstr ""
+
+#: lib/classes/Post.php:424
+msgid "Post Thumbnail"
+msgstr ""
+
+#: lib/classes/Post.php:425
+msgid "No image available for "
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:32
+msgid "A list of social media icon links."
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:35
+msgid "Social Media Widget"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:155
+msgid "Connect with me on social media."
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:239
+msgid "Title"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:242
+msgid ""
+"Enter the URL for the social media account to include it in the list. If the "
+"URL is empty, the icon will not appear in the list."
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:246
+msgid "Facebook URL"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:251
+msgid "Twitter URL"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:256
+msgid "Pinterest URL"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:261
+msgid "Linkedin URL"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:266
+msgid "Youtube URL"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:271
+msgid "Github URL"
+msgstr ""
+
+#: lib/classes/Social_Media_Widget.php:276
+msgid "Tumblr URL"
+msgstr ""
+
+#: lib/classes/View.php:35
+msgid "View not found:"
+msgstr ""
+
+#: lib/classes/Wordpress.php:387
+msgid "Pages:"
+msgstr ""

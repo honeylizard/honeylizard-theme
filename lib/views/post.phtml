@@ -1,0 +1,32 @@
+<div id="content" class="content">
+	<div class="wrapper content-container post-container">
+        <div class="main" role="main">
+            <div id="post-<?php echo $post_id; ?>" <?php echo $post_classes; ?>>
+                <div class="post-header clear-all">
+                    <h1 class="entry-title"><?php echo $title; ?></h1> <!-- entry-title -->
+                    <div class="post-meta">
+                        <div class="post-date">
+                            <abbr class="published" title="<?php echo $gmt_timestamp ?>">
+                                <?php echo $date; ?>
+                            </abbr>
+                        </div> <!-- .post-date -->
+                    </div> <!-- .post-meta -->
+                </div> <!-- .post-header -->
+                <div class="post-content clear-all">
+                    <?php echo $content; ?>
+                </div> <!-- .post-content -->
+                <div class="post-pagination clear-all">
+                    <?php echo $pagination; ?>
+                </div> <!-- .post-pagination -->
+                <?php echo $edit_link; ?>
+                <div class="post-tags clear-all">
+                    <?php echo $categories_tags; ?>
+                </div> <!-- .post-tags -->
+                <div class="post-navigation clear-all">
+		            <?php echo $navigation; ?>
+                </div> <!-- .post-navigation -->
+            </div> <!-- .post -->
+            <?php echo $comments; ?>
+        </div> <!-- .main -->
+	</div> <!-- .wrapper -->
+</div> <!-- #content .content -->

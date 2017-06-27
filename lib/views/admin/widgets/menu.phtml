@@ -1,0 +1,23 @@
+<p class="nav-menu-widget-no-menus-message" <?php echo $no_menu_style; ?>>
+	<?php echo $html_url; ?>
+</p>
+<div class="nav-menu-widget-form-controls" <?php echo $menu_style; ?>>
+	<p>
+		<label for="<?php echo $title_id; ?>"><?php echo $title_label; ?></label>
+		<input type="text" class="widefat" id="<?php echo $title_id; ?>" name="<?php echo $title_name; ?>"
+               value="<?php echo $title_value; ?>"/>
+	</p>
+    <p>
+        <label for="<?php echo $description_id; ?>"><?php echo $description_label; ?></label>
+        <textarea class="widefat" id="<?php echo $description_id; ?>"
+                  name="<?php echo $description_name; ?>"><?php echo $description_value; ?></textarea>
+    </p>
+	<p>
+		<label for="<?php echo $nav_menu_id; ?>"><?php echo $nav_menu_label; ?></label>
+		<select id="<?php echo $nav_menu_id; ?>" name="<?php echo $nav_menu_name; ?>">
+			<option value="0"><?php echo $nav_menu_blank_label; ?></option>
+			<?php echo $select_items; ?>
+		</select>
+	</p>
+	<?php echo $edit_menu; ?>
+</div>

@@ -1,0 +1,29 @@
+<tr class="form-field">
+	<th scope="row" valign="top">
+		<label for="menu-description">
+			<?php echo $menu_description_title; ?>
+		</label>
+	</th>
+	<td>
+		<input type="text" name="menu-description" id="menu-description" size="40"
+               value="<?php echo $menu_description_value; ?>">
+		<br />
+		<p class="description">
+			<?php echo $menu_description_helper; ?>
+		</p>
+	</td>
+</tr>
+<tr class="form-field">
+	<th scope="row" valign="top">
+		<label for="show-on-home">
+			<?php echo $show_on_home_title; ?>
+		</label>
+	</th>
+	<td>
+		<input type="checkbox" name="show-on-home" id="show-on-home" <?php echo $show_on_home_value; ?> value="1">
+		<br />
+		<p class="description">
+			<?php echo $show_on_home_helper; ?>
+		</p>
+	</td>
+</tr>

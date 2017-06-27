@@ -1,0 +1,20 @@
+<div id="post-<?php echo $id; ?>" <?php echo $post_classes; ?>>
+	<div class="post-header clear-all">
+		<h2 class="entry-title">
+			<a href="<?php echo $url; ?>" rel="bookmark">
+				<?php echo $title; ?>
+			</a>
+		</h2> <!-- entry-title -->
+		<div class="post-meta">
+			<abbr class="published" title="<?php echo $gmt_timestamp ?>">
+				<?php echo $date; ?>
+			</abbr>
+            <span class="comments-count">
+                <?php echo $total_comments; ?>
+            </span>
+		</div> <!-- .post-meta -->
+	</div> <!-- .post-header -->
+	<div class="page-content clear-all">
+		<?php echo $content; ?>
+	</div> <!-- .post-content -->
+</div> <!-- .post -->

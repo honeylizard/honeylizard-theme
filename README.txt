@@ -1,0 +1,75 @@
+=== Honeylizard ===
+Contributors: Lisa Bernhardt
+Requires at least: WordPress 4.1
+Tested up to: WordPress 4.8
+Version: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+== Description ==
+
+Originally designed for my personal site and now available for your use. Honeylizard is a fully responsive WordPress theme that looks great on smartphones, tablets, and desktops.
+
+This theme was built with web accessibility in mind and is translation ready (currently translated in the English language).
+
+== Features ==
+
+Includes the following features:
+
+* Custom Front Page that shows the latest posts from categories flagged for the front display.
+* Custom Description and Link Text for Categories that are flagged for the front display.
+* Custom Social Media Widget that is used displaying icon-based links to your social media sites.
+** Can be used on the front page as a horizontal-specific links (utilizing the Social Bar Widget Area).
+* Custom Background Image/Color that is visible on all pages (except Front Page)
+* Custom Site Logo
+* Custom Header Image that is visible on the Front Page
+* Custom Menu Widget that includes a description above the menu list.
+* Post and Pages are single column designs (e.g. no sidebar)
+* Standard Footer Widget where up to four widgets can appear in a row
+* Standard Sidebar where widgets can go.
+
+== Installation ==
+
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Honeylizard in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+
+== Copyright ==
+
+Honeylizard WordPress Theme, Copyright 2017 Honeylizard
+Honeylizard is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+== Third Party Resources ==
+
+Honeylizard bundles the following third-party resources:
+
+HTML5 Shiv, Copyright 2014 Alexander Farkas
+Licenses: MIT/GPL2
+Source: https://github.com/aFarkas/html5shiv
+
+normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
+License: MIT
+Source: https://necolas.github.io/normalize.css/
+
+Social Media Vector Icons, Dreamstale
+Source: http://www.dreamstale.com/free-download-72-vector-social-media-icons/
+
+Glyphicons, Jan Kovarik
+Licenses: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+Source: http://glyphicons.com/
+
+Tumbeasts, Matthew Inman
+Licenses: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+Source: http://theoatmeal.com/comics/state_web_summer#tumblr

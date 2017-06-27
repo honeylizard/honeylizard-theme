@@ -1,0 +1,21 @@
+<div class="flexbox">
+	<div class="comment-meta">
+		<?php echo $author_avatar; ?>
+		<div class="comment-meta-text">
+			<?php echo $author; ?>
+			<br/>
+			<abbr class="published" title="<?php echo $gmt_timestamp ?>">
+				<?php echo $date;?>
+			</abbr>
+			<br/>
+		</div>
+	</div>
+	<?php echo $edit_link; ?>
+</div>
+<div class="comment-awaiting-moderation">
+	<em><?php echo $pending_message; ?></em>
+</div>
+<?php echo $comment; ?>
+<div class="reply">
+	<?php echo $reply_link; ?>
+</div>
