@@ -25,6 +25,16 @@ class List_Post {
 	public $sidebar_right = '';
 
 	/**
+	 * @var string $view_template   The template used for the standard view of the list of posts.
+	 */
+	protected $view_template = 'posts/list';
+
+	/**
+	 * @var string $view_template_empty   The template used for the not found view of the list of posts.
+	 */
+	protected $view_template_empty = 'page';
+
+	/**
 	 * List_Post constructor.
 	 *
 	 * @param string $sidebar
@@ -63,11 +73,13 @@ class List_Post {
 			$view_variables = [
 				'title' => __('Nothing Found', 'honeylizard'),
 				'pagination' => '',
-				'post_list' => $message . get_search_form(false),
+				'content' => $message . get_search_form(false),
 				'sidebar' => $this->sidebar_right,
+				'edit_link' => '',
+				'page_classes' => '',
 			];
 
-			$view = new View('posts/list', $view_variables);
+			$view = new View($this->view_template_empty, $view_variables);
 			$html = $view->render();
 		} else {
 			$view_variables = [
@@ -77,7 +89,7 @@ class List_Post {
 				'sidebar' => $this->sidebar_right,
 			];
 
-			$view = new View('posts/list', $view_variables);
+			$view = new View($this->view_template, $view_variables);
 			$html = $view->render();
 		}
 		return $html;

@@ -3,12 +3,6 @@
 // Autoload the classes
 spl_autoload_register('autoload_class');
 
-// Include the Theme Customizer to enable Theme Customize admin screen functionality.
-include get_template_directory() . '/customizer.php';
-
-// Declare the Wordpress object. This will be called by the page sto get Wordpress specific sections within the Loop.
-$wordpress = new Wordpress();
-
 /**
  * Auto include class files into Theme from /lib/classes/ directory.
  *
@@ -18,11 +12,17 @@ function autoload_class($class_name) {
     include get_template_directory() . '/lib/classes/' . $class_name . '.php';
 }
 
-/**
- * Theme Customization - Set Content Width
- */
-if ( ! isset($content_width) ) {
-    $content_width = 1100;
+if (wp_get_theme()->Name == 'Honeylizard') {
+	// Theme Customization - Set Content Width
+	if ( ! isset($content_width) ) {
+		$content_width = 1100;
+	}
+
+	// Include the Theme Customizer to enable Theme Customize admin screen functionality.
+	include get_template_directory() . '/customizer.php';
+
+	// Declare the Wordpress object. This will be called by the page sto get Wordpress specific sections within the Loop.
+	$wordpress = new Wordpress();
 }
 
 /**

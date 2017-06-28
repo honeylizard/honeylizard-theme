@@ -42,60 +42,60 @@ msgstr ""
 msgid "Applies to the header of the website. Logo must not exceed 80px tall."
 msgstr ""
 
-#: functions.php:109
+#: functions.php:103
 msgid "Footer"
 msgstr ""
 
-#: functions.php:111
+#: functions.php:105
 msgid ""
 "Widgets in this area will be shown in the footer. This is not shown on the "
 "front page."
 msgstr ""
 
-#: functions.php:118
+#: functions.php:112
 msgid "Right Hand Sidebar"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:114
 msgid "Widgets in this area will be shown on the right-hand side."
 msgstr ""
 
-#: functions.php:127
+#: functions.php:121
 msgid "Footer (Front-Page)"
 msgstr ""
 
-#: functions.php:129
+#: functions.php:123
 msgid "Widgets in this area will be shown in the front page footer."
 msgstr ""
 
-#: functions.php:136
+#: functions.php:130
 msgid "Social Bar (Front-Page)"
 msgstr ""
 
-#: functions.php:138
+#: functions.php:132
 msgid ""
 "Widgets in this area will be shown in the front page right below the content."
 msgstr ""
 
-#: functions.php:193
+#: functions.php:187
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:290
+#: functions.php:284
 msgid "Menu Description"
 msgstr ""
 
-#: functions.php:292
+#: functions.php:286
 msgid ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
 msgstr ""
 
-#: functions.php:293
+#: functions.php:287
 msgid "Show on Home Page"
 msgstr ""
 
-#: functions.php:295
+#: functions.php:289
 msgid ""
 "Toggle whether the category appears on the front/home page. It will show the "
 "name of the cateogry, the description, along with a set of the latest posts "
@@ -183,51 +183,51 @@ msgstr ""
 msgid "Comments: "
 msgstr ""
 
-#: lib/classes/List_Post.php:35
+#: lib/classes/List_Post.php:45
 msgid "&laquo; Newer Entries"
 msgstr ""
 
-#: lib/classes/List_Post.php:36
+#: lib/classes/List_Post.php:46
 msgid "Older Entries &raquo;"
 msgstr ""
 
-#: lib/classes/List_Post.php:58
+#: lib/classes/List_Post.php:68
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: lib/classes/List_Post.php:60
+#: lib/classes/List_Post.php:70
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: lib/classes/List_Post.php:64
+#: lib/classes/List_Post.php:74
 msgid "Nothing Found"
 msgstr ""
 
-#: lib/classes/List_Post.php:90
+#: lib/classes/List_Post.php:102
 msgid "Search Results: "
 msgstr ""
 
-#: lib/classes/List_Post.php:93
+#: lib/classes/List_Post.php:105
 msgid "Category: "
 msgstr ""
 
-#: lib/classes/List_Post.php:95
+#: lib/classes/List_Post.php:107
 msgid "Tag: "
 msgstr ""
 
-#: lib/classes/List_Post.php:97
+#: lib/classes/List_Post.php:109
 msgid "Author"
 msgstr ""
 
-#: lib/classes/List_Post.php:99
+#: lib/classes/List_Post.php:111
 msgid "Archive: "
 msgstr ""
 
-#: lib/classes/List_Post.php:102
+#: lib/classes/List_Post.php:114
 msgid "Welcome"
 msgstr ""
 
