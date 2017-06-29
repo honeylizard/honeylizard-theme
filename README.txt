@@ -2,7 +2,7 @@
 Contributors: Lisa Bernhardt
 Requires at least: WordPress 4.1
 Tested up to: WordPress 4.8
-Version: 7.0
+Version: 7.01
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -73,3 +73,17 @@ Source: http://glyphicons.com/
 Tumbeasts, Matthew Inman
 Licenses: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
 Source: http://theoatmeal.com/comics/state_web_summer#tumblr
+
+== Changelog ==
+
+= 7.01 =
+* Released: June 28, 2017
+
+- Added Google Analytics hook
+- Changed 'Not Found' Search Results to a single column layout
+- Fixed issue in Customize meta keyword and meta description fields not saving
+
+= 7.0 =
+* Released: June 27, 2017
+
+Initial release

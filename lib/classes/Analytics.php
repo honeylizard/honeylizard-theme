@@ -6,7 +6,6 @@ class Analytics {
 
 	/**
 	 * @var string $tracking_id      The tracking ID for Google Analytics.
-	 *
 	 */
 	public $tracking_id;
 
@@ -33,8 +32,10 @@ class Analytics {
 			$view_variables = [
 				'tracking_id' => $this->tracking_id,
 			];
+
 			$view = new View($this->view_template, $view_variables);
 			echo $view->render();
 		}
 	}
+
 }
