@@ -80,6 +80,11 @@ class Wordpress {
 	public $description;
 
 	/**
+	 * @var string $google_analytics_tracking_id    The Google Analytics Tracking ID for the site.
+	 */
+	public $google_analytics_tracking_id;
+
+	/**
 	 * Wordpress constructor.
 	 */
 	public function __construct() {
@@ -112,6 +117,8 @@ class Wordpress {
 		$this->copyright   = date("Y" ) . ' &copy; ' . $this->author;
 		$this->keywords    = get_theme_mod('meta_keywords');
 		$this->description = get_theme_mod('meta_description');
+
+		$this->google_analytics_tracking_id = get_theme_mod('google_analytics');
 	}
 
 	/**

@@ -42,6 +42,16 @@ msgstr ""
 msgid "Applies to the header of the website. Logo must not exceed 80px tall."
 msgstr ""
 
+#: customizer.php:63
+msgid "Google Analytics Tracking ID"
+msgstr ""
+
+#: customizer.php:64
+msgid ""
+"Applies the Google Analytics hook. The ID can be found under your Google "
+"Analytics Settings."
+msgstr ""
+
 #: functions.php:103
 msgid "Footer"
 msgstr ""
@@ -346,6 +356,6 @@ msgstr ""
 msgid "View not found:"
 msgstr ""
 
-#: lib/classes/Wordpress.php:387
+#: lib/classes/Wordpress.php:394
 msgid "Pages:"
 msgstr ""

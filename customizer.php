@@ -52,8 +52,43 @@ function honeylizard_customize_register($wp_customize) {
 		'section'     => 'honeylizard_settings',
 		])
 	);
+
+	// Add Google Analytics Option
+	$wp_customize->add_setting('google_analytics', [
+		'default'           => '',
+		'sanitize_callback' => 'honeylizard_sanitize_text',
+		'transport'         => 'postMessage',
+	]);
+	$wp_customize->add_control( new WP_Customize_Control($wp_customize, 'google_analytics', [
+			'label'       => __('Google Analytics Tracking ID', 'honeylizard'),
+			'description' => __('Applies the Google Analytics hook. The ID can be found under your Google Analytics Settings.', 'honeylizard'),
+			'section'     => 'honeylizard_settings',
+		])
+	);
 }
 add_action('customize_register', 'honeylizard_customize_register');
+
+/**
+ * Callback that sanitizes text input.
+ *
+ * @param string $input     The provided input that needs to be sanitized.
+ *
+ * @return string
+ */
+function honeylizard_sanitize_text($input) {
+	return wp_kses_post(force_balance_tags($input));
+}
+
+/**
+ * Callback that sanitizes image URL input.
+ *
+ * @param string $input     The provided input that needs to be sanitized.
+ *
+ * @return string
+ */
+function honeylizard_sanitize_image($input) {
+	return esc_url_raw($input);
+}
 
 /**
  * Enqueue the assets directly into the Theme Customization admin screen.

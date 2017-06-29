@@ -10,6 +10,15 @@
  * @since 4.0
  */
 ?>
-		<?php wp_footer(); ?>
+		<?php
+        wp_footer();
+
+		global $wordpress;
+
+		if ( is_object($wordpress) ) {
+			$analytics = new Analytics($wordpress->google_analytics_tracking_id);
+			$analytics->render();
+		}
+        ?>
 	</body>
 </html>
