@@ -2,13 +2,12 @@
 # Copyright (C) 2015 the WordPress team
 # This file is distributed under the GNU General Public License v2 or later.
 # Lisa Bernhardt <lisa@honeylizard.com>, 2017.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Honeylizard 7.0\n"
 "Report-Msgid-Bugs-To: http://www.honeylizard.com\n"
 "POT-Creation-Date: 2017-06-27 15:41-0400\n"
-"PO-Revision-Date: 2017-07-10 17:55-0400\n"
+"PO-Revision-Date: 2017-07-10 18:11-0500\n"
 "Last-Translator: Lisa Bernhardt <lisa@honeylizard.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -20,19 +19,19 @@ msgstr ""
 
 #: customizer.php:69
 msgid "Theme Specific Settings"
-msgstr ""
+msgstr "Theme Specific Settings"
 
 #: customizer.php:80
 msgid "Meta Keywords"
-msgstr ""
+msgstr "Meta Keywords"
 
 #: customizer.php:81
 msgid "Applies to the meta information of the website."
-msgstr ""
+msgstr "Applies to the meta information of the website."
 
 #: customizer.php:97
 msgid "Meta Description"
-msgstr ""
+msgstr "Meta Description"
 
 #: customizer.php:98
 msgid ""
@@ -40,69 +39,79 @@ msgid ""
 "between 135 and 160 characters. If left blank, Google will create a snippet "
 "in search results. "
 msgstr ""
+"Applies to the meta information of the website for all pages. It should be "
+"between 135 and 160 characters. If left blank, Google will create a snippet "
+"in search results. "
 
 #: customizer.php:114
 msgid "Google Analytics Tracking ID"
-msgstr ""
+msgstr "Google Analytics Tracking ID"
 
 #: customizer.php:115
 msgid ""
 "Applies the Google Analytics hook. The ID can be found under your Google "
 "Analytics Settings."
 msgstr ""
+"Applies the Google Analytics hook. The ID can be found under your Google "
+"Analytics Settings."
 
 #: functions.php:111
 msgid "Footer"
-msgstr ""
+msgstr "Footer"
 
 #: functions.php:113
 msgid ""
 "Widgets in this area will be shown in the footer. This is not shown on the "
 "front page."
 msgstr ""
+"Widgets in this area will be shown in the footer. This is not shown on the "
+"front page."
 
 #: functions.php:120
 msgid "Right Hand Sidebar"
-msgstr ""
+msgstr "Right Hand Sidebar"
 
 #: functions.php:122
 msgid "Widgets in this area will be shown on the right-hand side."
-msgstr ""
+msgstr "Widgets in this area will be shown on the right-hand side."
 
 #: functions.php:129
 msgid "Footer (Front-Page)"
-msgstr ""
+msgstr "Footer (Front-Page)"
 
 #: functions.php:131
 msgid "Widgets in this area will be shown in the front page footer."
-msgstr ""
+msgstr "Widgets in this area will be shown in the front page footer."
 
 #: functions.php:138
 msgid "Social Bar (Front-Page)"
-msgstr ""
+msgstr "Social Bar (Front-Page)"
 
 #: functions.php:140
 msgid ""
 "Widgets in this area will be shown in the front page right below the content."
 msgstr ""
+"Widgets in this area will be shown in the front page right below the content."
 
 #: functions.php:207
 msgid "Main Navigation"
-msgstr ""
+msgstr "Main Navigation"
 
 #: functions.php:306
 msgid "Menu Description"
-msgstr ""
+msgstr "Menu Description"
 
 #: functions.php:308
 msgid ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
 msgstr ""
+"This field is used within a navigation menu and provides extra information "
+"for users."
 
 #: functions.php:309
 msgid "Show on Home Page"
-msgstr ""
+msgstr "Show on Home Page"
 
 #: functions.php:311
 msgid ""
@@ -110,39 +119,42 @@ msgid ""
 "name of the cateogry, the description, along with a set of the latest posts "
 "for that category."
 msgstr ""
+"Toggle whether the category appears on the front/home page. It will show the "
+"name of the cateogry, the description, along with a set of the latest posts "
+"for that category."
 
 #: lib/classes/Comment.php:63
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Your comment is awaiting moderation."
 
 #: lib/classes/Comment.php:86
 #, php-format
 msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
+msgstr "<cite class=\"fn\">%s</cite>"
 
 #: lib/classes/Comment.php:89
 msgid "(Edit)"
-msgstr ""
+msgstr "(Edit)"
 
 #.  Date Format (e.g. February 21, 2012)
 #: lib/classes/Comment.php:123 lib/classes/Post.php:394
 msgid "F j, Y"
-msgstr ""
+msgstr "F j, Y"
 
 #.  Time Format (e.g. 10:00 am)
 #: lib/classes/Comment.php:124 lib/classes/Post.php:395
 msgid "g:i a"
-msgstr ""
+msgstr "g:i a"
 
 #.  GMT Date/Time Format (e.g. 2012-01-08T17:00:20+00:00)
 #: lib/classes/Comment.php:132 lib/classes/Post.php:403
 msgid "c"
-msgstr ""
+msgstr "c"
 
 #: lib/classes/Comment.php:170 lib/classes/Page.php:100
 #: lib/classes/Post.php:222
 msgid "Edit"
-msgstr ""
+msgstr "Edit"
 
 #: lib/classes/Error_Page.php:18
 msgid ""
@@ -151,18 +163,22 @@ msgid ""
 "Anyway, we will help you get back on track. Why not try to search for the "
 "page you were looking for?"
 msgstr ""
+"The page that you are looking for does not exist on this website. You may "
+"have accidentally mistype the page address, or followed an expired link. "
+"Anyway, we will help you get back on track. Why not try to search for the "
+"page you were looking for?"
 
 #: lib/classes/Error_Page.php:22
 msgid "Page Not Found"
-msgstr ""
+msgstr "Page Not Found"
 
 #: lib/classes/Header.php:47
 msgid "Skip to content"
-msgstr ""
+msgstr "Skip to content"
 
 #: lib/classes/Header.php:51
 msgid "Top Menu"
-msgstr ""
+msgstr "Top Menu"
 
 # Between &ldquo; and &rdquo; is the title of the post
 #: lib/classes/List_Comment.php:40
@@ -170,40 +186,40 @@ msgstr ""
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "One thought on &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s thoughts on &ldquo;%2$s&rdquo;"
 
 # &laquo; is an left arrow in ASCII
 #: lib/classes/List_Comment.php:54
 msgid "&laquo; Previous Comments"
-msgstr ""
+msgstr "&laquo; Previous Comments"
 
 # &raquo; is an right arrow in ASCII
 #: lib/classes/List_Comment.php:55
 msgid "Next Comments &raquo;"
-msgstr ""
+msgstr "Next Comments &raquo;"
 
 #: lib/classes/List_Comment.php:58
 msgid "No thoughts on this yet."
-msgstr ""
+msgstr "No thoughts on this yet."
 
 #: lib/classes/List_Comment.php:69
 msgid "Comments are closed."
-msgstr ""
+msgstr "Comments are closed."
 
 #: lib/classes/List_Comment.php:84
 msgid "Comments: "
-msgstr ""
+msgstr "Comments: "
 
 # &laquo; is an left arrow in ASCII
 #: lib/classes/List_Post.php:45
 msgid "&laquo; Newer Entries"
-msgstr ""
+msgstr "&laquo; Newer Entries"
 
 # &raquo; is an right arrow in ASCII
 #: lib/classes/List_Post.php:46
 msgid "Older Entries &raquo;"
-msgstr ""
+msgstr "Older Entries &raquo;"
 
 # &rsquo; is an apostrophe/single quote in ASCII
 #: lib/classes/List_Post.php:68
@@ -211,134 +227,140 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 
 #: lib/classes/List_Post.php:70
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 
 #: lib/classes/List_Post.php:74
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nothing Found"
 
 #: lib/classes/List_Post.php:102
 msgid "Search Results: "
-msgstr ""
+msgstr "Search Results: "
 
 #: lib/classes/List_Post.php:105
 msgid "Category: "
-msgstr ""
+msgstr "Category: "
 
 #: lib/classes/List_Post.php:107
 msgid "Tag: "
-msgstr ""
+msgstr "Tag: "
 
 #: lib/classes/List_Post.php:109
 msgid "Author"
-msgstr ""
+msgstr "Author"
 
 #: lib/classes/List_Post.php:111
 msgid "Archive: "
-msgstr ""
+msgstr "Archive: "
 
 #: lib/classes/List_Post.php:114
 msgid "Welcome"
-msgstr ""
+msgstr "Welcome"
 
 #: lib/classes/Menu_Widget.php:20
 msgid "A custom menu with a description."
-msgstr ""
+msgstr "A custom menu with a description."
 
 # &amp; is an ampersand in ASCII
 #: lib/classes/Menu_Widget.php:22
 msgid "Custom Menu &amp; Description"
-msgstr ""
+msgstr "Custom Menu &amp; Description"
 
 #: lib/classes/Menu_Widget.php:133
 #, php-format
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
-msgstr ""
+msgstr "No menus have been created yet. <a href=\"%s\">Create some</a>."
 
 #: lib/classes/Menu_Widget.php:148
 msgid "Edit Menu"
-msgstr ""
+msgstr "Edit Menu"
 
 #: lib/classes/Menu_Widget.php:173
 msgid "Title:"
-msgstr ""
+msgstr "Title:"
 
 #: lib/classes/Menu_Widget.php:177
 msgid "Description:"
-msgstr ""
+msgstr "Description:"
 
 #: lib/classes/Menu_Widget.php:181
 msgid "Select Menu:"
-msgstr ""
+msgstr "Select Menu:"
 
 # &mdash; is an dash in ASCII
 #: lib/classes/Menu_Widget.php:183
 msgid "&mdash; Select &mdash;"
-msgstr ""
+msgstr "&mdash; Select &mdash;"
 
 #: lib/classes/Post.php:99
 msgid "Read More"
-msgstr ""
+msgstr "Read More"
 
 #: lib/classes/Post.php:244
 msgid " Comments"
-msgstr ""
+msgstr " Comments"
 
 #: lib/classes/Post.php:305
 msgid "Posted in "
-msgstr ""
+msgstr "Posted in "
 
 #: lib/classes/Post.php:331
 msgid "Tagged in "
-msgstr ""
+msgstr "Tagged in "
 
 #: lib/classes/Post.php:398
 msgid "Published "
-msgstr ""
+msgstr "Published "
 
 #: lib/classes/Post.php:428
 msgid "Post Thumbnail"
-msgstr ""
+msgstr "Post Thumbnail"
 
 #: lib/classes/Post.php:429
 msgid "No image available for "
-msgstr ""
+msgstr "No image available for "
 
 #: lib/classes/Social_Media_Widget.php:85
 msgid "A list of social media icon links."
-msgstr ""
+msgstr "A list of social media icon links."
 
 #: lib/classes/Social_Media_Widget.php:88
 msgid "Social Media Widget"
-msgstr ""
+msgstr "Social Media Widget"
 
 #: lib/classes/Social_Media_Widget.php:130
 msgid "Connect with me on social media."
-msgstr ""
+msgstr "Connect with me on social media."
 
 #: lib/classes/Social_Media_Widget.php:192
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: lib/classes/Social_Media_Widget.php:208
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 #: lib/classes/Social_Media_Widget.php:211
 msgid ""
 "Enter the URL for the social media account to include it in the list. If the "
 "URL is empty, the icon will not appear in the list."
 msgstr ""
+"Enter the URL for the social media account to include it in the list. If the "
+"URL is empty, the icon will not appear in the list."
 
 #: lib/classes/View.php:35
 msgid "View not found:"
-msgstr ""
+msgstr "View not found:"
 
 #: lib/classes/Wordpress.php:544
 msgid "Pages:"
-msgstr ""
+msgstr "Pages:"
