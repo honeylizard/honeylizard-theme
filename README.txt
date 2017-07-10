@@ -1,6 +1,6 @@
 === Honeylizard ===
 Contributors: Lisa Bernhardt
-Requires at least: WordPress 4.1
+Requires at least: WordPress 4.5
 Tested up to: WordPress 4.8
 Version: 7.01
 License: GNU General Public License v2 or later
@@ -75,6 +75,17 @@ Licenses: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
 Source: http://theoatmeal.com/comics/state_web_summer#tumblr
 
 == Changelog ==
+
+= 7.02 =
+* Released: July 10, 2017
+
+- Updated ARIA labeling
+- Refactored the Social Media Widget
+- Cleaned up the visibility of the class variables
+- Moved from a custom site logo option to the standard Wordpress custom logo option introduced in version 4.5
+- Added the Customizer Selective Refresh functionality to widgets, custom logo, custom header image, site name,
+and site tagline
+- Added more comments on the translation files for translators in regards to ASCII characters
 
 = 7.01 =
 * Released: June 28, 2017
