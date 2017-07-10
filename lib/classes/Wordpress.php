@@ -127,10 +127,14 @@ class Wordpress {
 	 * @return string
 	 */
 	public static function getSiteLogo() {
-		$site_logo_file = get_theme_mod('site_logo_image');
-		if ( empty($site_logo_file) ) {
+		$custom_logo_id = get_theme_mod('custom_logo');
+
+		if ( empty($custom_logo_id) ) {
 			$theme_defaults = Wordpress::settingDefaults();
-			$site_logo_file = $theme_defaults['site_logo_image'];
+			$site_logo_file = $theme_defaults['custom_logo'];
+		} else {
+			$logoSize = wp_get_attachment_image_src($custom_logo_id, 'full');
+			$site_logo_file = $logoSize[0];
 		}
 
 		$site_logo = '';
@@ -361,7 +365,7 @@ class Wordpress {
 	 */
 	public static function settingDefaults() {
 		return [
-			'site_logo_image' => get_template_directory_uri() . '/assets/site-logo.jpg'
+			'custom_logo' => get_template_directory_uri() . '/assets/site-logo.jpg'
 		];
 	}
 

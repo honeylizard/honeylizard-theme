@@ -15,10 +15,4 @@
             $('meta[name=keywords]').attr('content', newval);
         });
     });
-    // Update the site logo in real time
-    wp.customize('site_logo_image', function(value) {
-        value.bind(function(newval) {
-            $('.site-logo').attr('src', newval);
-        });
-    });
 } )(jQuery);

@@ -189,6 +189,18 @@ function honeylizard_setup() {
 	];
 	add_theme_support('custom-background', $bg_defaults);
 
+	// Custom Site Logo
+    $logo_defaults = [
+	    'width'       => 80,
+	    'height'      => 80,
+	    'flex-width'  => true,
+	    'flex-height' => true,
+    ];
+	add_theme_support('custom-logo', $logo_defaults);
+
+	// Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
 	// Navigation Menus
 	register_nav_menus(
 		[
