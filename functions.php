@@ -1,4 +1,12 @@
 <?php
+/**
+ * Honeylizard Theme functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package WordPress
+ * @subpackage Honeylizard
+ */
 
 // Autoload the classes
 spl_autoload_register('autoload_class');
@@ -232,22 +240,24 @@ function honeylizard_get_site_footer() {
 
 	if ( ! is_front_page() ) {
 	    ?>
-        <div class="footer footer clear-all" role="contentinfo">
-            <div class="wrapper">
-                <div class="footer-widgets flexbox">
-					<?php
-                    if ( is_active_sidebar('footer') ) {
-					    dynamic_sidebar('footer');
-					}
-					?>
-                </div> <!-- .footer-widgets -->
-            </div> <!-- .wrapper -->
-        </div> <!-- .footer -->
-        <div class="footer footer-2 clear-all" role="contentinfo">
-            <div class="wrapper">
-                <?php echo $wordpress->copyright; ?>
-            </div> <!-- .wrapper -->
-        </div> <!-- .footer -->
+        <div class="footers" role="contentinfo">
+            <div class="footer footer clear-all">
+                <div class="wrapper">
+                    <div class="footer-widgets flexbox">
+                        <?php
+                        if ( is_active_sidebar('footer') ) {
+                            dynamic_sidebar('footer');
+                        }
+                        ?>
+                    </div> <!-- .footer-widgets -->
+                </div> <!-- .wrapper -->
+            </div> <!-- .footer -->
+            <div class="footer footer-2 clear-all">
+                <div class="wrapper">
+                    <?php echo $wordpress->copyright; ?>
+                </div> <!-- .wrapper -->
+            </div> <!-- .footer -->
+        </div> <!-- .footers -->
     <?php
 	} else {
 		?>

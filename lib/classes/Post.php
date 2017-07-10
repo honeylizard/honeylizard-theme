@@ -411,8 +411,12 @@ class Post {
 	private function setThumbnails($post) {
 		if ( has_post_thumbnail($this->id) ) {
 			// The img HTML tag for the thumbnail.
-			$this->thumbnail        = get_the_post_thumbnail($post, 'large-thumb');
-			$this->thumbnail_square = get_the_post_thumbnail($post, 'thumbnail');
+			$this->thumbnail        = get_the_post_thumbnail($post, 'large-thumb', [
+				'role' => 'presentation',
+			]);
+			$this->thumbnail_square = get_the_post_thumbnail($post, 'thumbnail', [
+				'role' => 'presentation',
+			]);
 		} else {
 			$this->no_thumbnail = true;
 

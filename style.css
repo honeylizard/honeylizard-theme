@@ -882,7 +882,7 @@ input[type='range']:focus {
 .front-page-category {
     padding: 50px 0;
 }
-.front-page-category h3 {
+.front-page-category .category-title {
     text-align: center;
     margin-bottom: 16px;
     font-size: 34px;
