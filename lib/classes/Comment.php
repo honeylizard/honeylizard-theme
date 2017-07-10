@@ -64,49 +64,6 @@ class Comment {
 	}
 
 	/**
-	 * Sets the timestamp of the comment based on it's ID.
-	 *
-	 * Based off of the get_comment_time and get_comment_date Wordpress functions.
-	 *
-	 * @link https://developer.wordpress.org/reference/functions/get_comment_time/
-	 * @link https://developer.wordpress.org/reference/functions/get_comment_date/
-	 *
-	 * @param object $comment   The WP_Comment object.
-	 *
-	 */
-	private function setTimestamps($comment) {
-		$local_date_format = __('F j, Y', 'honeylizard');
-		$local_time_format = __('g:i a', 'honeylizard');
-
-		$comment_local_date = mysql2date($local_date_format, $comment->comment_date);
-		$comment_local_time = mysql2date($local_time_format, $comment->comment_date, true);
-
-		/* translators: 1: date, 2: time */
-		$this->local_timestamp = sprintf('%1$s &#8211; %2$s', $comment_local_date, $comment_local_time);
-
-		$gmt_format = __('c', 'honeylizard');
-		$this->gmt_timestamp =  mysql2date($gmt_format, $comment->comment_date_gmt, true);
-	}
-
-	/**
-	 *
-	 * Based off of the get_comment_author_link Wordpress function.
-	 *
-	 * @link https://developer.wordpress.org/reference/functions/get_comment_author_link/
-	 *
-	 * @param object $comment   The WP_Comment object.
-	 */
-	private function setAuthor($comment) {
-		$url = get_comment_author_url($comment);
-		$author = get_comment_author($comment);
-		$author_html = '<a href="' . $url . ' rel="external nofollow" class="url">' . $author . '</a>';
-		if ( empty( $url ) || 'http://' == $url ) {
-			$author_html = $author;
-		}
-		$this->author = $author_html;
-	}
-
-	/**
 	 * Returns an HTML view of the comment.
 	 *
 	 * @param array $args  Override default arguments.
@@ -149,6 +106,49 @@ class Comment {
 
 		$view = new View('comments/item/comment', $view_variables);
 		return $view->render();
+	}
+
+	/**
+	 * Sets the timestamp of the comment based on it's ID.
+	 *
+	 * Based off of the get_comment_time and get_comment_date Wordpress functions.
+	 *
+	 * @link https://developer.wordpress.org/reference/functions/get_comment_time/
+	 * @link https://developer.wordpress.org/reference/functions/get_comment_date/
+	 *
+	 * @param object $comment   The WP_Comment object.
+	 *
+	 */
+	private function setTimestamps($comment) {
+		$local_date_format = __('F j, Y', 'honeylizard');
+		$local_time_format = __('g:i a', 'honeylizard');
+
+		$comment_local_date = mysql2date($local_date_format, $comment->comment_date);
+		$comment_local_time = mysql2date($local_time_format, $comment->comment_date, true);
+
+		/* translators: 1: date, 2: time */
+		$this->local_timestamp = sprintf('%1$s &#8211; %2$s', $comment_local_date, $comment_local_time);
+
+		$gmt_format = __('c', 'honeylizard');
+		$this->gmt_timestamp =  mysql2date($gmt_format, $comment->comment_date_gmt, true);
+	}
+
+	/**
+	 *
+	 * Based off of the get_comment_author_link Wordpress function.
+	 *
+	 * @link https://developer.wordpress.org/reference/functions/get_comment_author_link/
+	 *
+	 * @param object $comment   The WP_Comment object.
+	 */
+	private function setAuthor($comment) {
+		$url = get_comment_author_url($comment);
+		$author = get_comment_author($comment);
+		$author_html = '<a href="' . $url . ' rel="external nofollow" class="url">' . $author . '</a>';
+		if ( empty( $url ) || 'http://' == $url ) {
+			$author_html = $author;
+		}
+		$this->author = $author_html;
 	}
 
 	/**

@@ -39,17 +39,6 @@ class View {
 	}
 
 	/**
-	 * Sets the variables for the view template file.
-	 *
-	 * @param array $list   The list of variables to add for the view template.
-	 */
-	private function setVariables($list) {
-		foreach ( $list as $name => $value ) {
-			$this->view_variables[$name] = $value;
-		}
-	}
-
-	/**
 	 * Generates the HTML based on the view template file and the set variables.
 	 *
 	 * @return string
@@ -59,6 +48,17 @@ class View {
 		ob_start();
 		include $this->view;
 		return ob_get_clean();
+	}
+
+	/**
+	 * Sets the variables for the view template file.
+	 *
+	 * @param array $list   The list of variables to add for the view template.
+	 */
+	private function setVariables($list) {
+		foreach ( $list as $name => $value ) {
+			$this->view_variables[$name] = $value;
+		}
 	}
 
 }

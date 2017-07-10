@@ -8,27 +8,27 @@ class Page {
 	 * @var string $id      The ID of the page.
 	 *
 	 */
-	public $id;
+	protected $id;
 
 	/**
 	 * @var string $title   The title of the page.
 	 */
-	public $title;
+	protected $title;
 
 	/**
 	 * @var string $url     The URL of the page.
 	 */
-	public $url = '';
+	protected $url = '';
 
 	/**
 	 * @var string  $content    The full content of the page.
 	 */
-	public $content = '';
+	protected $content = '';
 
 	/**
 	 * @var string $sidebar_right   The sidebar that will be shown alongside the page.
 	 */
-	public $sidebar_right = '';
+	protected $sidebar_right = '';
 
 	/**
 	 * @var string $view_template   The template used for the standard view of a Page.
@@ -89,7 +89,7 @@ class Page {
 	 *
 	 * @return string
 	 */
-	public function getAdminEditLink($post_id, $text = null) {
+	protected function getAdminEditLink($post_id, $text = null) {
 		$class = 'post-edit-link';
 		$link = '';
 

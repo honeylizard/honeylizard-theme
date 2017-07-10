@@ -7,12 +7,12 @@ class Analytics {
 	/**
 	 * @var string $tracking_id      The tracking ID for Google Analytics.
 	 */
-	public $tracking_id;
+	private $tracking_id;
 
 	/**
 	 * @var string $view_template   The template used for the standard view of analytics.
 	 */
-	protected $view_template = 'ga-analytics';
+	private $view_template = 'ga-analytics';
 
 	/**
 	 * Analytics constructor.

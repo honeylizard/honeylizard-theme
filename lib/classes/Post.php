@@ -7,67 +7,67 @@ class Post {
 	/**
 	 * @var int     $id         The ID of the post.
 	 */
-	public $id;
+	private $id;
 
 	/**
 	 * @var string  $title      The title of the post.
 	 */
-	public $title = '';
+	private $title = '';
 
 	/**
 	 * @var Author $author      The author of the post.
 	 */
-	public $author;
+	private $author;
 
 	/**
 	 * @var string  $excerpt    The summary for the post.
 	 */
-	public $excerpt = '';
+	private $excerpt = '';
 
 	/**
 	 * @var string  $content    The full content of the post.
 	 */
-	public $content = '';
+	private $content = '';
 
 	/**
 	 * @var string  $thumbnail  The img HTML tag on the post.
 	 */
-	public $thumbnail = '';
+	private $thumbnail = '';
 
 	/**
 	 * @var string  $thumbnail_square  The square img HTML tag on the post.
 	 */
-	public $thumbnail_square = '';
+	private $thumbnail_square = '';
 
 	/**
 	 * @var string  $url        The URL for the post.
 	 */
-	public $url = '';
+	private $url = '';
 
 	/**
 	 * @var string  $timestamp_local    The local date/time of the post.
 	 */
-	public $timestamp_local;
+	private $timestamp_local;
 
 	/**
 	 * @var string  $timestamp_gmt      The GMT date/time of the post.
 	 */
-	public $timestamp_gmt;
+	private $timestamp_gmt;
 
 	/**
 	 * @var string $sidebar_right   The sidebar that will be shown alongside the page.
 	 */
-	public $sidebar_right = '';
+	private $sidebar_right = '';
 
 	/**
 	 * @var string  $navigation     The HTML links to the next/previous posts.
 	 */
-	public $navigation;
+	private $navigation;
 
 	/**
 	 * @var string $pagination  The pagination of the post (if applicable).
 	 */
-	public $pagination;
+	private $pagination;
 
 	/**
 	 * @var string $default_thumbnail_path  The path to the default thumbnail image.

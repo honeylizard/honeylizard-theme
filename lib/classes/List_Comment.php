@@ -7,28 +7,28 @@ class List_Comment {
 	/**
 	 * @var string $title   The title of the list of comments (e.g. X thoughts on %post%)
 	 */
-	public $title;
+	private $title;
 
 	/**
 	 * @var string $list    The HTML list of the comments.
 	 */
-	public $list;
+	private $list;
 
 	/**
 	 * @var string $pagination  The HTML pagination for the comments.
 	 */
-	public $pagination;
+	private $pagination;
 
 	/**
 	 * @var string $form    The form used to reply to comments on the parent level.
 	 */
-	public $form;
+	private $form;
 
 	/**
 	 * @var string $closed_form     The message added for screen readers when new comments can not be added
 	 *                              (e.g. the comments are closed).
 	 */
-	public $closed_form;
+	private $closed_form;
 
 	/**
 	 * List_Comment constructor.

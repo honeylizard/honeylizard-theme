@@ -12,7 +12,7 @@ class Front extends Page {
 	/**
 	 * @var string $sidebar_social   The sidebar that will be shown below the page content.
 	 */
-	public $sidebar_social = '';
+	private $sidebar_social = '';
 
 
 	public function __construct($page_id = 0, $sidebar = '') {

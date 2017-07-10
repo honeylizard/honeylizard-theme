@@ -7,32 +7,32 @@ class List_Post {
 	/**
 	 * @var string $title   The title of the list of posts.
 	 */
-	public $title;
+	private $title;
 
 	/**
 	 * @var string $pagination  The HTML pagination for the posts.
 	 */
-	public $pagination = '';
+	private $pagination = '';
 
 	/**
 	 * @var string $list    The HTML list of the posts.
 	 */
-	public $list = '';
+	private $list = '';
 
 	/**
 	 * @var string $sidebar_right   The sidebar that will be shown alongside the list.
 	 */
-	public $sidebar_right = '';
+	private $sidebar_right = '';
 
 	/**
 	 * @var string $view_template   The template used for the standard view of the list of posts.
 	 */
-	protected $view_template = 'posts/list';
+	private $view_template = 'posts/list';
 
 	/**
 	 * @var string $view_template_empty   The template used for the not found view of the list of posts.
 	 */
-	protected $view_template_empty = 'page';
+	private $view_template_empty = 'page';
 
 	/**
 	 * List_Post constructor.
