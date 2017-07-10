@@ -13,10 +13,11 @@
 		<?php
         wp_footer();
 
+		/* @var $wordpress Wordpress */
 		global $wordpress;
 
 		if ( is_object($wordpress) ) {
-			$analytics = new Analytics($wordpress->google_analytics_tracking_id);
+			$analytics = new Analytics($wordpress->getGoogleAnalyticsId());
 			$analytics->render();
 		}
         ?>

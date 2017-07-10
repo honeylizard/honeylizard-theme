@@ -17,7 +17,7 @@ if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
 		$page_id = get_the_ID();
-		$front_social_sidebar = Wordpress::getSidebar('social-bar-front');
+		$front_social_sidebar = Wordpress::getSidebarHtml('social-bar-front');
 	}
 }
 

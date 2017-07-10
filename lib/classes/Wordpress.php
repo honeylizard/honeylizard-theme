@@ -7,82 +7,82 @@ class Wordpress {
 	/**
 	 * @var string $language The site language (e.g. en-US).
 	 */
-	public $language;
+	private $language;
 
 	/**
 	 * @var string $charset The site character set (e.g. UTF-8).
 	 */
-	public $charset;
+	private $charset;
 
 	/**
 	 * @var string $language_attribute The lang attribute for the html tag.
 	 */
-	public $language_attribute;
+	private $language_attribute;
 
 	/**
 	 * @var string $logo The site logo HTML view.
 	 */
-	public $logo;
+	private $logo;
 
 	/**
 	 * @var string $name The site name.
 	 */
-	public $name;
+	private $name;
 
 	/**
 	 * @var string $tagline The site tagline.
 	 */
-	public $tagline;
+	private $tagline;
 
 	/**
 	 * @var string $url The base URL for the site.
 	 */
-	public $url;
+	private $url;
 
 	/**
 	 * @var string $theme_path The path to the theme's directory.
 	 */
-	public $theme_path;
+	private $theme_path;
 
 	/**
 	 * @var string $theme_stylesheet The CSS stylesheet of the theme.
 	 */
-	public $theme_stylesheet;
+	private $theme_stylesheet;
 
 	/**
 	 * @var string $main_nav_list The main navigation HTML list.
 	 */
-	public $main_nav_list;
+	private $main_nav_list;
 
 	/**
 	 * @var string $sidebar_right The sidebar that will be shown alongside the content.
 	 */
-	public $sidebar_right;
+	private $sidebar_right;
 
 	/**
 	 * @var string $author The author of the theme.
 	 */
-	public $author = 'Honeylizard';
+	private $author = 'Honeylizard';
 
 	/**
 	 * @var string $copyright The copyright for the theme.
 	 */
-	public $copyright;
+	private $copyright;
 
 	/**
 	 * @var string $keywords The keywords of the site.
 	 */
-	public $keywords;
+	private $keywords;
 
 	/**
 	 * @var string $description The description of the site.
 	 */
-	public $description;
+	private $description;
 
 	/**
 	 * @var string $google_analytics_tracking_id    The Google Analytics Tracking ID for the site.
 	 */
-	public $google_analytics_tracking_id;
+	private $google_analytics_tracking_id;
 
 	/**
 	 * Wordpress constructor.
@@ -97,7 +97,7 @@ class Wordpress {
 		$this->theme_path         = get_template_directory_uri();
 		$this->theme_stylesheet   = get_bloginfo('stylesheet_url');
 
-		$this->setSiteLogo();
+		$this->logo = Wordpress::getSiteLogo();
 
 		$this->main_nav_list = wp_nav_menu([
 			'theme_location' => 'header-mainnav',
@@ -112,7 +112,7 @@ class Wordpress {
 			'walker'         => new Main_Navigation(), //use this custom class for outputting the menu
 		]);
 
-		$this->sidebar_right = $this->getSidebar('right');
+		$this->sidebar_right = $this->getSidebarHtml('right');
 
 		$this->copyright   = date("Y" ) . ' &copy; ' . $this->author;
 		$this->keywords    = get_theme_mod('meta_keywords');
@@ -122,9 +122,11 @@ class Wordpress {
 	}
 
 	/**
-	 * Sets the site logo based on the theme's custom settings.
+	 * Generates the HTML for the site logo based on the theme's custom settings.
+	 *
+	 * @return string
 	 */
-	public function setSiteLogo() {
+	public static function getSiteLogo() {
 		$site_logo_file = get_theme_mod('site_logo_image');
 		if ( empty($site_logo_file) ) {
 			$theme_defaults = Wordpress::settingDefaults();
@@ -137,27 +139,16 @@ class Wordpress {
 				'tag'   => 'img',
 				'class' => 'site-logo',
 				'alt'   => 'Site Logo',
-				'title' => $this->name,
+				'title' => esc_attr(get_bloginfo('name', 'display')),
 				'src'   => $site_logo_file,
 			];
 
-			$site_logo = '<a href="' . $this->url . '" class="site-logo-link">';
+			$site_logo = '<a href="' . esc_url(site_url('/')) . '" class="site-logo-link">';
 			$site_logo .= Wordpress::getSingleTag($site_logo_attributes);
 			$site_logo .= '</a>';
 		}
 
-		$this->logo = $site_logo;
-	}
-
-	/**
-	 * Returns the default custom settings for the theme.
-	 *
-	 * @return array
-	 */
-	public static function settingDefaults() {
-		return [
-			'site_logo_image' => get_template_directory_uri() . '/assets/site-logo.jpg'
-		];
+		return $site_logo;
 	}
 
 	/**
@@ -220,13 +211,168 @@ class Wordpress {
 	}
 
 	/**
+	 * Sets the Right Sidebar
+	 *
+	 * @param string $sidebar
+	 */
+	public function setSidebarRight($sidebar) {
+		$this->sidebar_right = $sidebar;
+	}
+
+	/**
+	 * Gets the language of the Wordpress site (e.g. en-US).
+	 *
+	 * @return string
+	 */
+	public function getLanguage() {
+		return $this->language;
+	}
+
+	/**
+	 * Gets the language attribute of the Wordpress site for the html tag (e.g. lang="en-US").
+	 *
+	 * @return mixed|string
+	 */
+	public function getLanguageAttribute() {
+		return $this->language_attribute;
+	}
+
+	/**
+	 * Gets the character set of the Wordpress site (e.g. UTF-8).
+	 *
+	 * @return string
+	 */
+	public function getCharset() {
+		return $this->charset;
+	}
+
+	/**
+	 * Gets the name of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getName() {
+		return $this->name;
+	}
+
+	/**
+	 * Gets the tagline of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getTagline() {
+		return $this->tagline;
+	}
+
+	/**
+	 * Gets the logo of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getLogo() {
+		return $this->logo;
+	}
+
+	/**
+	 * Gets the meta keywords of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getKeywords() {
+		return $this->keywords;
+	}
+
+	/**
+	 * Gets the meta description of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getDescription() {
+		return $this->description;
+	}
+
+	/**
+	 * Gets the author of the Wordpress theme.
+	 *
+	 * @return string
+	 */
+	public function getAuthor() {
+		return $this->author;
+	}
+
+	/**
+	 * Gets the copyright of the Wordpress theme.
+	 *
+	 * @return string
+	 */
+	public function getCopyright() {
+		return $this->copyright;
+	}
+
+	/**
+	 * Gets the right-hand sidebar of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getSidebarRight() {
+		return $this->sidebar_right;
+	}
+
+	/**
+	 * Gets the main navigation list of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getMainNavigation() {
+		return $this->main_nav_list;
+	}
+
+	/**
+	 * Gets the path of the Wordpress theme.
+	 *
+	 * @return string
+	 */
+	public function getThemePath() {
+		return $this->theme_path;
+	}
+
+	/**
+	 * Gets the path of the Wordpress theme stylesheet (e.g. style.css).
+	 *
+	 * @return string
+	 */
+	public function getThemeStylesheet() {
+		return $this->theme_stylesheet;
+	}
+
+	/**
+	 * Gets the Google Analytics Tracking ID of the Wordpress site.
+	 *
+	 * @return string
+	 */
+	public function getGoogleAnalyticsId() {
+		return $this->google_analytics_tracking_id;
+	}
+
+	/**
+	 * Returns the default custom settings for the theme.
+	 *
+	 * @return array
+	 */
+	public static function settingDefaults() {
+		return [
+			'site_logo_image' => get_template_directory_uri() . '/assets/site-logo.jpg'
+		];
+	}
+
+	/**
 	 * Gets the HTML contents of a Wordpress sidebar.
 	 *
 	 * @param string $sidebar_id The name of the sidebar that is registered with Wordpress.
 	 *
 	 * @return string
 	 */
-	public static function getSidebar($sidebar_id) {
+	public static function getSidebarHtml($sidebar_id) {
 		$sidebar = '';
 
 		if ( is_active_sidebar($sidebar_id) ) {

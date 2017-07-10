@@ -11,6 +11,7 @@
 
 get_header();
 
+/* @var $wordpress Wordpress */
 global $wordpress;
 
 $post_id = 0;
@@ -28,7 +29,7 @@ if ( have_posts() ) {
 }
 
 if ( is_object($wordpress) ) {
-	$post = new Post($post_id, $wordpress->sidebar_right, $post_pagination, $post_content);
+	$post = new Post($post_id, $wordpress->getSidebarRight(), $post_pagination, $post_content);
 	echo $post->renderView();
 }
 

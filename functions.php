@@ -202,21 +202,21 @@ add_action('after_setup_theme', 'honeylizard_setup');
  * Theme Customization - Add meta information to head HTML tag
  */
 function honeylizard_get_head_meta() {
-
+	/* @var $wordpress Wordpress */
 	global $wordpress;
 
     if ( is_object($wordpress) ) {
 	    $view_variables = [
-		    'keywords' => $wordpress->keywords,
-		    'description' => $wordpress->description,
-		    'language' => $wordpress->language,
-		    'author' => $wordpress->author,
-		    'copyright' => $wordpress->copyright,
-		    'humans_file' => $wordpress->theme_path . '/humans.txt',
-		    'charset' => $wordpress->charset,
-		    'google_font_stylesheet' => $wordpress->theme_path . '/lib/vendor/google-fonts/google-fonts.css',
-		    'normalize_stylesheet' => $wordpress->theme_path . '/lib/vendor/normalize/normalize.min.css',
-		    'theme_stylesheet' => $wordpress->theme_stylesheet,
+		    'keywords' => $wordpress->getKeywords(),
+		    'description' => $wordpress->getDescription(),
+		    'language' => $wordpress->getLanguage(),
+		    'author' => $wordpress->getAuthor(),
+		    'copyright' => $wordpress->getCopyright(),
+		    'humans_file' => $wordpress->getThemePath() . '/humans.txt',
+		    'charset' => $wordpress->getCharset(),
+		    'google_font_stylesheet' => $wordpress->getThemePath() . '/lib/vendor/google-fonts/google-fonts.css',
+		    'normalize_stylesheet' => $wordpress->getThemePath() . '/lib/vendor/normalize/normalize.min.css',
+		    'theme_stylesheet' => $wordpress->getThemeStylesheet(),
 	    ];
 
 	    $view = new View('head', $view_variables);
@@ -254,7 +254,7 @@ function honeylizard_get_site_footer() {
             </div> <!-- .footer -->
             <div class="footer footer-2 clear-all">
                 <div class="wrapper">
-                    <?php echo $wordpress->copyright; ?>
+                    <?php echo $wordpress->getCopyright(); ?>
                 </div> <!-- .wrapper -->
             </div> <!-- .footer -->
         </div> <!-- .footers -->

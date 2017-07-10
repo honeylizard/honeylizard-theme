@@ -17,17 +17,18 @@
 
 get_header();
 
+/* @var $wordpress Wordpress */
 global $wordpress;
 
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
-		$wordpress->sidebar_right = Wordpress::getSidebar('right');
+		$wordpress->setSidebarRight(Wordpress::getSidebarHtml('right'));
 	}
 }
 
 if ( is_object($wordpress) ) {
-	$posts = new List_Post($wordpress->sidebar_right);
+	$posts = new List_Post($wordpress->getSidebarRight());
 	echo $posts->renderView();
 }
 

@@ -13,6 +13,7 @@
 
 get_header();
 
+/* @var $wordpress Wordpress */
 global $wordpress;
 
 $page_id = 0;
@@ -22,10 +23,10 @@ if ( have_posts() ) {
 		$page_id = get_the_ID();
 	}
 }
+
 if ( is_object($wordpress) ) {
-	$page = new Page($page_id, $wordpress->sidebar_right);
+	$page = new Page($page_id, $wordpress->getSidebarRight());
 	echo $page->renderView();
 }
-
 
 get_footer();
