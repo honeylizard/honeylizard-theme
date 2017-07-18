@@ -40,6 +40,9 @@ class List_Post {
 	 * @param string $sidebar
 	 */
 	public function __construct($sidebar = '') {
+		/* @var WP_Query $wp_query */
+		global $wp_query;
+
 		if ( have_posts() ) {
 			$this->pagination = get_the_posts_pagination([
 				'prev_text' => __('&laquo; Newer Entries', 'honeylizard'),
@@ -52,6 +55,10 @@ class List_Post {
 				the_post();
 				$post_class = new Post(get_the_ID());
 				$this->list .= $post_class->renderListItemView();
+				$index = $wp_query->current_post + 1;
+				if ($index != ($wp_query->post_count)) {
+					$this->list .= '<hr/>';
+				}
 			}
 		}
 		$this->sidebar_right = $sidebar;

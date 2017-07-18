@@ -4,7 +4,7 @@ Theme URI:
 Author: Lisa Bernhardt
 Author URI: http://www.honeylizard.com
 Description: The 2017 theme for Honeylizard is a fully responsive theme that looks great on any device. Please note that this theme only works in WordPress 4.5 or later.
-Version: 7.02
+Version: 7.03
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: theme-options, translation-ready, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, sticky-post
@@ -868,12 +868,18 @@ input[type='range']:focus {
 /*--------------------------------------------------------------
 7.0 Front Page
 --------------------------------------------------------------*/
+.home {
+    background-attachment: fixed !important;
+}
 .home .main {
     margin: 0;
     padding: 0;
 }
 .home .page {
     padding: 40px;
+}
+.home .page-content {
+    padding: 20px;
 }
 .header-image img {
     border-radius: 50%;
@@ -900,9 +906,6 @@ input[type='range']:focus {
 .front-page-category .category-link {
     text-align: center;
 }
-.front-page-category:nth-child(odd) {
-    background-color: #303030;
-}
 
 .post-preview-block {
     margin: 0 15px;
@@ -911,13 +914,14 @@ input[type='range']:focus {
     height: 225px;
 }
 .post-preview-title {
-    margin-top: 14px;
-    margin-bottom: 12px;
+    margin-top: 14px !important;
+    margin-bottom: 12px !important;
     line-height: 1.3em;
     font-size: 24px;
 }
 .post-preview-excerpt {
     margin-bottom: 12px;
+    min-height: 120px;
 }
 
 .social-bar-front {
@@ -926,6 +930,21 @@ input[type='range']:focus {
 }
 .social-bar-front .social-media-links li {
     margin: 0 10px;
+}
+
+@media (max-width: 1200px) {
+    .header-image img {
+        margin-bottom: 30px;
+    }
+
+    .post-preview-excerpt {
+        min-height: initial;
+    }
+    .post-preview-title,
+    .post-preview-excerpt,
+    .post-preview-link {
+        text-align: center;
+    }
 }
 /*--------------------------------------------------------------
 8.0 Error Page
@@ -1161,18 +1180,28 @@ blockquote a:focus {
     background-color: #222;
 }
 .main,
-.sidebar .widget {
+.sidebar .widget,
+.single .main .post,
+.single .main .post-comments {
     background-color: #424242;
     color: #fff;
     box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
+}
+.single .main {
+    background-color: transparent;
+    padding: 0;
+}
+.single .main .post,
+.single .main .post-comments {
+    padding: 40px;
 }
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
 button,
 .button-link {
-    background-color: #FFCA28;
-    color: #000;
+    background-color: #1976d2;
+    color: #FFF;
 }
 input[type="button"]:focus,
 input[type="submit"]:focus,
@@ -1185,7 +1214,43 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button-link:hover {
-    background-color: #FFA000;
+    background-color: #004ba0;
+    color: #FFF;
 }
-
-
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+button:focus,
+.button-link:focus,
+.small-button-link:focus {
+    outline: 2px dashed whitesmoke;
+    outline-offset: 3px;
+}
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 0 4px #FFCA28;
+}
+.gold-button {
+    background-color: #FFCA28 !important;
+    color: #000 !important;
+}
+.gold-button:hover,
+.gold-button:focus {
+    background-color: #FFA000 !important;
+    color: #000 !important;
+}
+hr {
+    background-color: #303030;
+}
+.home .main,
+.front-page-category {
+    background-color: transparent !important;
+}
+.home .page-content {
+    background-color: #424242;
+}
+.front-page-category:nth-child(odd) {
+    background-color: #303030 !important;
+}
+.front-page-category:nth-child(even) {
+    background-color: #424242 !important;
+}

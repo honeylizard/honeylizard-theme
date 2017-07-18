@@ -9,6 +9,9 @@ Location: Atlanta, Georgia, USA
 Avatar: Hillary Lipko Photography
 URL: http://www.flickr.com/photos/lamenta3/
 
+HTML5shiv
+URL: https://code.google.com/p/html5shiv/
+
 Normalization of CSS: Nicolas Gallagher and Jonathan Neal
 URL: https://necolas.github.io/normalize.css/
 
@@ -20,6 +23,9 @@ URL: http://glyphicons.com/
 
 Tumbeast: Matthew Inman
 URL: http://theoatmeal.com/comics/state_web_summer#tumblr
+
+BG Texture: Federica Pelzel
+URL: http://subtlepatterns.com/light-honeycomb/
 
 /* SITE */
 Standards: HTML5, CSS3

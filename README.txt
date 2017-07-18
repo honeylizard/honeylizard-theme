@@ -2,7 +2,7 @@
 Contributors: Lisa Bernhardt
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.8
-Version: 7.01
+Version: 7.03
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -74,7 +74,26 @@ Tumbeasts, Matthew Inman
 Licenses: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
 Source: http://theoatmeal.com/comics/state_web_summer#tumblr
 
+BG Texture, Federica Pelzel
+Licenses: Creative Commons Attribution 3.0 (CC BY-SA 3.0)
+Source: http://subtlepatterns.com/light-honeycomb/
+
 == Changelog ==
+
+= 7.03 =
+* Released: July 17, 2017
+
+Sent the theme for review/critique. This iteration is for all of the changes based on the feedback:
+
+- Adjusted outline on focused buttons to help visibility by making the outline more noticeable.
+- Changed the button colors to help them become more noticeable when compared against header links.
+- Adjusted the height on the front page category lists so that the read more button aligns vertically on large screens.
+- Added focus outline color for input fields
+- Added divider between categories/tags and the post navigation on post pages
+- Visually separated the comment section from the post on post pages.
+- Visually separated the posts from each other in the post list pages.
+- Adjusted backgrounds on front page to show the texture background on a specific section.
+- Aligned front page post lists on smaller screens so that everything is centered.
 
 = 7.02 =
 * Released: July 10, 2017
