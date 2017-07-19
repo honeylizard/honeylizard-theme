@@ -121,12 +121,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     margin-left: auto;
     margin-right: auto;
 }
-@media only screen and (min-width: 868px) and (max-width: 1179px) {
+@media all and (min-width: 868px) and (max-width: 1179px) {
     .wrapper {
         width: 750px;
     }
 }
-@media only screen and (max-width: 867px) {
+@media all and (max-width: 867px) {
     .wrapper {
         width: 90%;
         padding-left: 5%;
@@ -136,9 +136,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 3.0 Accessibility
 --------------------------------------------------------------*/
-.screen-reader-text {
-    display: none;
-}
 .screen-reader-icon {
     max-height: 20px;
     max-width: 20px;
@@ -149,6 +146,39 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .social-bar-front .screen-reader-icon {
     max-height: 35px;
     max-width: 35px;
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect( 1px, 1px, 1px, 1px );
+    clip-path: inset( 50% );
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
 }
 /*--------------------------------------------------------------
 4.0 Typography
@@ -389,7 +419,7 @@ img {
 .header .nav li a {
     padding: 0 10px;
 }
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
     .header .nav li {
         line-height: initial;
     }
@@ -397,7 +427,7 @@ img {
         padding: 10px 10px;
     }
 }
-@media only screen and (max-width: 350px) {
+@media all and (max-width: 350px) {
     .header .site-header,
     .header .nav {
         width: 100%;
@@ -528,7 +558,7 @@ img {
 .post-list .post .flexbox .post-excerpt {
     padding-left: 20px;
 }
-@media only screen and (max-width: 1179px) {
+@media all and (max-width: 1179px) {
     .post-list .post .flexbox .post-header,
     .post-list .post .flexbox .post-excerpt {
         padding-left: 0;
@@ -932,7 +962,7 @@ input[type='range']:focus {
     margin: 0 10px;
 }
 
-@media (max-width: 1200px) {
+@media all and (max-width: 1200px) {
     .header-image img {
         margin-bottom: 30px;
     }
