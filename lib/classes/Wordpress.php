@@ -472,6 +472,47 @@ class Wordpress {
 	}
 
 	/**
+	 * Gets the HTML for an Icon Image. This icon is shown without text, but has text associated for screen readers.
+	 *
+	 * @param string $icon_src      The source path for the icon image.
+	 * @param string $text          The text shown when a screen reader is in use.
+	 *
+	 * @return string
+	 */
+	public static function getIconHtml($icon_src = '', $text = '') {
+		$html = '';
+		if (! empty($text)) {
+			$html .= '<span class="screen-reader-text">' . $text . '</span>';
+		}
+		if (! empty($icon_src)) {
+			$html .= '<img class="screen-reader-icon" src="' . $icon_src . '" aria-hidden alt="" role="presentation">';
+		}
+		return $html;
+	}
+
+	/**
+	 * Gets the HTML for the Wordpress Header Image.
+	 *
+	 * @param string $image_src     The source path for the header image.
+	 * @param string $alt           The alternative text shown when the image or not found or a screen reader is in use.
+	 *
+	 * @return string
+	 */
+	public static function getHeaderImageHtml($image_src = '', $alt = '') {
+		$html = '';
+		if (! empty($image_src)) {
+			$html .= '<img class="aligncenter" src="' . $image_src . '"';
+			if (empty($alt)) {
+				$html .= ' aria-hidden alt=""';
+			} else {
+				$html .= ' alt="' . $alt . '"';
+			}
+			$html .= ' role="presentation">';
+		}
+		return $html;
+	}
+
+	/**
 	 * Gets the HTML contents of a Wordpress comments.
 	 *
 	 * @param int $post_id The ID of the post.

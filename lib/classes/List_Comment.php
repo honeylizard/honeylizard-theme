@@ -81,8 +81,8 @@ class List_Comment {
 	 */
 	public function renderView() {
 		$comments_icon = get_template_directory_uri() . '/lib/vendor/glyphicons/glyphicons-245-conversation.png';
-		$comments_title_html = '<span class="screen-reader-text">' . __('Comments: ', 'honeylizard') . '</span>';
-		$comments_title_html .= '<img class="screen-reader-icon" src="' . $comments_icon . '" alt="">';
+
+		$comments_title_html = Wordpress::getIconHtml($comments_icon, __('Comments: ', 'honeylizard'));
 
 		$view_variables = [
 			'title' => $comments_title_html . ' ' . $this->title,

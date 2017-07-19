@@ -240,7 +240,7 @@ class Post {
 		if ($this->total_comments > 0) {
 			$comments_icon = get_template_directory_uri() . '/lib/vendor/glyphicons/glyphicons-245-conversation.png';
 			$html .= ' | ';
-			$html .= '<img class="screen-reader-icon" src="' . $comments_icon . '" alt="">';
+			$html .= Wordpress::getIconHtml($comments_icon);
 			$html .= $this->total_comments . __(' Comments', 'honeylizard');
 		}
 		return $html;
@@ -301,10 +301,7 @@ class Post {
 		if ($post_categories) {
 			$category_icon = get_template_directory_uri() . '/lib/vendor/glyphicons/glyphicons-441-folder-closed.png';
 
-			$category_html = '<span class="screen-reader-text">'
-			                 . __('Posted in ', 'honeylizard') . '</span>';
-			$category_html .= '<img class="screen-reader-icon" src="' . $category_icon . '" alt="">';
-
+			$category_html = Wordpress::getIconHtml($category_icon, __('Posted in ', 'honeylizard'));
 			$category_html .= $post_categories;
 			$category_html = str_replace(
 				'<a href="','<a class="small-button-link" href="', $category_html);
@@ -327,9 +324,7 @@ class Post {
 		if ($post_tags) {
 			$tag_icon = get_template_directory_uri() . '/lib/vendor/glyphicons/glyphicons-67-tags.png';
 
-			$tag_html = '<span class="screen-reader-text">'
-			            . __('Tagged in ', 'honeylizard') . '</span>';
-			$tag_html .= '<img class="screen-reader-icon" src="' . $tag_icon . '" alt="">';
+			$tag_html = Wordpress::getIconHtml($tag_icon, __('Tagged in ', 'honeylizard'));
 
 			/* @var $tag WP_Term */
 			foreach($post_tags as $tag) {
@@ -395,8 +390,8 @@ class Post {
 		$time = get_post_time(__('g:i a', 'honeylizard'), false, $this->id);
 
 		$date_icon = get_template_directory_uri() . '/lib/vendor/glyphicons/glyphicons-46-calendar.png';
-		$date_html = '<span class="screen-reader-text">' . __('Published ', 'honeylizard') . '</span>';
-		$date_html .= '<img class="screen-reader-icon" src="' . $date_icon . '" alt="">';
+
+		$date_html = Wordpress::getIconHtml($date_icon, __('Published ', 'honeylizard'));
 		$date_html .= '<span class="date">' . sprintf(' %1$s &#8211; %2$s', $date, $time) . '</span>';
 
 		$this->timestamp_local = $date_html;

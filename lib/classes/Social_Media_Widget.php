@@ -254,8 +254,7 @@ class Social_Media_Widget extends WP_Widget {
 		if ( $url ) {
 			$item_variables = [
 				'url'  => $url,
-				'name' => $name,
-				'icon' => $this->icon_template_path . $icon,
+				'icon_html' => Wordpress::getIconHtml($this->icon_template_path . $icon, $name),
 			];
 
 			$view = new View($this->item_view_template, $item_variables);

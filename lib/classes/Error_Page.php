@@ -20,7 +20,7 @@ class Error_Page extends Page {
 		$image_path = get_template_directory_uri() . '/lib/vendor/the-oatmeal/';
 		$view_variables = [
 			'title' => __('Page Not Found', 'honeylizard'),
-			'image_src' => $image_path . 'tb_sign1.png',
+			'header_image' => Wordpress::getHeaderImageHtml($image_path . 'tb_sign1.png'),
 			'content' =>  $message . get_search_form(false),
 		];
 

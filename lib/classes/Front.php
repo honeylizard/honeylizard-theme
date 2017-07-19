@@ -33,7 +33,7 @@ class Front extends Page {
 			'page_id' => $this->id,
 			'page_classes' => $page_classes,
 			'title' => $this->title,
-			'header_image_url' => get_header_image(),
+			'header_image' => Wordpress::getHeaderImageHtml(get_header_image()),
 			'content' => $this->content,
 			'sidebar' => $this->sidebar_right,
 			'social_sidebar' => $this->sidebar_social,

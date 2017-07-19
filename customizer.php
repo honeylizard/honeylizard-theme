@@ -186,7 +186,7 @@ function honeylizard_customize_partial_custom_logo() {
  * @return void
  */
 function honeylizard_customize_partial_custom_header_image() {
-	echo '<img class="aligncenter" alt="" src="' . get_header_image() . '">';
+	echo Wordpress::getHeaderImageHtml(get_header_image());
 }
 
 /**
