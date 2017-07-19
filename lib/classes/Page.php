@@ -71,41 +71,11 @@ class Page {
 			'title' => $this->title,
 			'content' => $this->content,
 			'sidebar' => $this->sidebar_right,
-			'edit_link' => $this->getAdminEditLink($this->id),
+			'edit_link' => Wordpress::getAdminEditLink($this->id),
 		];
 
 		$view = new View($this->view_template, $view_variables);
 		return $view->render();
-	}
-
-	/**
-	 * Based on the edit_post_link function from Wordpress.
-	 * This variant will only return the HTML string, rather than display it.
-	 *
-	 * @link https://developer.wordpress.org/reference/functions/edit_post_link/
-	 *
-	 * @param int $post_id  The ID of the post.
-	 * @param string $text   Optional. Anchor text. If null, default is 'Edit'. Default null.
-	 *
-	 * @return string
-	 */
-	protected function getAdminEditLink($post_id, $text = null) {
-		$class = 'post-edit-link';
-		$link = '';
-
-		if ( ! empty($post_id) ) {
-			$url = get_edit_post_link($post_id);
-			if ( ! empty($url) ) {
-				if ( null === $text ) {
-					$text = __('Edit', 'honeylizard');
-				}
-				$link = '<div class="post-admin clear-all">';
-				$link .= '<a class="' . esc_attr($class) . '" href="' . esc_url($url) . '">' . $text . '</a>';
-				$link .= '</div>';
-			}
-		}
-
-		return $link;
 	}
 
 }

@@ -47,6 +47,8 @@ class List_Post {
 			$this->pagination = get_the_posts_pagination([
 				'prev_text' => __('&laquo; Newer Entries', 'honeylizard'),
 				'next_text' => __('Older Entries &raquo;', 'honeylizard'),
+				'before_page_number' =>
+					'<span class="screen-reader-text">' . __( 'Page', 'honeylizard' ) . '</span>' . ' ',
 			]);
 
 			$this->list = '';

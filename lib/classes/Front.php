@@ -37,7 +37,7 @@ class Front extends Page {
 			'content' => $this->content,
 			'sidebar' => $this->sidebar_right,
 			'social_sidebar' => $this->sidebar_social,
-			'edit_link' => $this->getAdminEditLink($this->id),
+			'edit_link' => Wordpress::getAdminEditLink($this->id),
 			'categories_preview' => $this->renderCategoriesView(),
 		];
 

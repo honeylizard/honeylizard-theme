@@ -539,6 +539,45 @@ class Wordpress {
 	}
 
 	/**
+	 * Based on the edit_post_link function from Wordpress.
+	 * This variant will only return the HTML string, rather than display it.
+	 *
+	 * @link https://developer.wordpress.org/reference/functions/edit_post_link/
+	 *
+	 * @param int $post_id  The ID of the post.
+	 * @param string $text   Optional. Anchor text. If null, default is 'Edit'. Default null.
+	 *
+	 * @return string
+	 */
+	public static function getAdminEditLink($post_id, $text = '') {
+		$link = '';
+
+		if ( ! empty($post_id) ) {
+			$post_type = 'post';
+			if (is_page($post_id)) {
+				$post_type = 'page';
+			}
+
+			$div_class = $post_type . '-admin';
+			$link_class = $post_type . '-edit-link';
+
+			$url = get_edit_post_link($post_id);
+			if ( ! empty($url) ) {
+				if ( empty($text) ) {
+					$text = __('Edit', 'honeylizard');
+				}
+				$link = '<div class="' . esc_attr($div_class) . ' clear-all">';
+				$link .= '<a class="' . esc_attr($link_class) . '" href="' . esc_url($url) . '">'
+				         . $text . ' - ' . '<span class="screen-reader-text">' . get_the_title($post_id) . '</span>'
+				         . '</a>';
+				$link .= '</div>';
+			}
+		}
+
+		return $link;
+	}
+
+	/**
 	 * Gets the HTML contents of a Wordpress comments reply form.
 	 *
 	 * @return string
