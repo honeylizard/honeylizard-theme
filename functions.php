@@ -229,6 +229,7 @@ function honeylizard_get_head_meta() {
 		    'google_font_stylesheet' => $wordpress->getThemePath() . '/lib/vendor/google-fonts/google-fonts.css',
 		    'normalize_stylesheet' => $wordpress->getThemePath() . '/lib/vendor/normalize/normalize.min.css',
 		    'theme_stylesheet' => $wordpress->getThemeStylesheet(),
+            'theme_print_stylesheet' => $wordpress->getThemePath() . '/print.css',
 	    ];
 
 	    $view = new View('head', $view_variables);
