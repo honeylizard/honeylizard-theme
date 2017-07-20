@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Honeylizard 7.0\n"
 "Report-Msgid-Bugs-To: http://www.honeylizard.com\n"
 "POT-Creation-Date: 2017-06-27 15:41-0400\n"
-"PO-Revision-Date: 2017-07-10 18:11-0500\n"
+"PO-Revision-Date: 2017-07-19 21:35-0500\n"
 "Last-Translator: Lisa Bernhardt <lisa@honeylizard.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -97,11 +97,11 @@ msgstr ""
 msgid "Main Navigation"
 msgstr "Main Navigation"
 
-#: functions.php:306
+#: functions.php:307
 msgid "Menu Description"
 msgstr "Menu Description"
 
-#: functions.php:308
+#: functions.php:309
 msgid ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
@@ -109,11 +109,11 @@ msgstr ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
 
-#: functions.php:309
+#: functions.php:310
 msgid "Show on Home Page"
 msgstr "Show on Home Page"
 
-#: functions.php:311
+#: functions.php:312
 msgid ""
 "Toggle whether the category appears on the front/home page. It will show the "
 "name of the cateogry, the description, along with a set of the latest posts "
@@ -136,23 +136,22 @@ msgstr "<cite class=\"fn\">%s</cite>"
 msgid "(Edit)"
 msgstr "(Edit)"
 
-#.  Date Format (e.g. February 21, 2012)
-#: lib/classes/Comment.php:123 lib/classes/Post.php:394
+#.   Date Format (e.g. February 21, 2012)
+#: lib/classes/Comment.php:123 lib/classes/Post.php:360
 msgid "F j, Y"
 msgstr "F j, Y"
 
-#.  Time Format (e.g. 10:00 am)
-#: lib/classes/Comment.php:124 lib/classes/Post.php:395
+#.   Time Format (e.g. 10:00 am)
+#: lib/classes/Comment.php:124 lib/classes/Post.php:361
 msgid "g:i a"
 msgstr "g:i a"
 
-#.  GMT Date/Time Format (e.g. 2012-01-08T17:00:20+00:00)
-#: lib/classes/Comment.php:132 lib/classes/Post.php:403
+#.   GMT Date/Time Format (e.g. 2012-01-08T17:00:20+00:00)
+#: lib/classes/Comment.php:132 lib/classes/Post.php:369
 msgid "c"
 msgstr "c"
 
-#: lib/classes/Comment.php:170 lib/classes/Page.php:100
-#: lib/classes/Post.php:222
+#: lib/classes/Comment.php:170 lib/classes/Wordpress.php:567
 msgid "Edit"
 msgstr "Edit"
 
@@ -207,22 +206,26 @@ msgstr "No thoughts on this yet."
 msgid "Comments are closed."
 msgstr "Comments are closed."
 
-#: lib/classes/List_Comment.php:84
+#: lib/classes/List_Comment.php:85
 msgid "Comments: "
 msgstr "Comments: "
 
 # &laquo; is an left arrow in ASCII
-#: lib/classes/List_Post.php:45
+#: lib/classes/List_Post.php:48
 msgid "&laquo; Newer Entries"
 msgstr "&laquo; Newer Entries"
 
 # &raquo; is an right arrow in ASCII
-#: lib/classes/List_Post.php:46
+#: lib/classes/List_Post.php:49
 msgid "Older Entries &raquo;"
 msgstr "Older Entries &raquo;"
 
+#: lib/classes/List_Post.php:51
+msgid "Page"
+msgstr "Page"
+
 # &rsquo; is an apostrophe/single quote in ASCII
-#: lib/classes/List_Post.php:68
+#: lib/classes/List_Post.php:77
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -230,7 +233,7 @@ msgstr ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 
-#: lib/classes/List_Post.php:70
+#: lib/classes/List_Post.php:79
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -238,31 +241,31 @@ msgstr ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 
-#: lib/classes/List_Post.php:74
+#: lib/classes/List_Post.php:83
 msgid "Nothing Found"
 msgstr "Nothing Found"
 
-#: lib/classes/List_Post.php:102
+#: lib/classes/List_Post.php:111
 msgid "Search Results: "
 msgstr "Search Results: "
 
-#: lib/classes/List_Post.php:105
+#: lib/classes/List_Post.php:114
 msgid "Category: "
 msgstr "Category: "
 
-#: lib/classes/List_Post.php:107
+#: lib/classes/List_Post.php:116
 msgid "Tag: "
 msgstr "Tag: "
 
-#: lib/classes/List_Post.php:109
+#: lib/classes/List_Post.php:118
 msgid "Author"
 msgstr "Author"
 
-#: lib/classes/List_Post.php:111
+#: lib/classes/List_Post.php:120
 msgid "Archive: "
 msgstr "Archive: "
 
-#: lib/classes/List_Post.php:114
+#: lib/classes/List_Post.php:123
 msgid "Welcome"
 msgstr "Welcome"
 
@@ -305,27 +308,27 @@ msgstr "&mdash; Select &mdash;"
 msgid "Read More"
 msgstr "Read More"
 
-#: lib/classes/Post.php:244
+#: lib/classes/Post.php:215
 msgid " Comments"
 msgstr " Comments"
 
-#: lib/classes/Post.php:305
+#: lib/classes/Post.php:275
 msgid "Posted in "
 msgstr "Posted in "
 
-#: lib/classes/Post.php:331
+#: lib/classes/Post.php:298
 msgid "Tagged in "
 msgstr "Tagged in "
 
-#: lib/classes/Post.php:398
+#: lib/classes/Post.php:365
 msgid "Published "
 msgstr "Published "
 
-#: lib/classes/Post.php:428
+#: lib/classes/Post.php:394
 msgid "Post Thumbnail"
 msgstr "Post Thumbnail"
 
-#: lib/classes/Post.php:429
+#: lib/classes/Post.php:395
 msgid "No image available for "
 msgstr "No image available for "
 
@@ -361,6 +364,6 @@ msgstr ""
 msgid "View not found:"
 msgstr "View not found:"
 
-#: lib/classes/Wordpress.php:544
+#: lib/classes/Wordpress.php:624
 msgid "Pages:"
 msgstr "Pages:"

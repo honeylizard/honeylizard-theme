@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Honeylizard 7.0\n"
 "Report-Msgid-Bugs-To: http://www.honeylizard.com\n"
 "POT-Creation-Date: 2017-06-27 15:41-0400\n"
-"PO-Revision-Date: 2017-07-10 17:55-0400\n"
+"PO-Revision-Date: 2017-07-19 21:25-0400\n"
 "Last-Translator: Lisa Bernhardt <lisa@honeylizard.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -90,21 +90,21 @@ msgstr ""
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:306
+#: functions.php:307
 msgid "Menu Description"
 msgstr ""
 
-#: functions.php:308
+#: functions.php:309
 msgid ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
 msgstr ""
 
-#: functions.php:309
+#: functions.php:310
 msgid "Show on Home Page"
 msgstr ""
 
-#: functions.php:311
+#: functions.php:312
 msgid ""
 "Toggle whether the category appears on the front/home page. It will show the "
 "name of the cateogry, the description, along with a set of the latest posts "
@@ -125,22 +125,21 @@ msgid "(Edit)"
 msgstr ""
 
 #.  Date Format (e.g. February 21, 2012)
-#: lib/classes/Comment.php:123 lib/classes/Post.php:394
+#: lib/classes/Comment.php:123 lib/classes/Post.php:360
 msgid "F j, Y"
 msgstr ""
 
 #.  Time Format (e.g. 10:00 am)
-#: lib/classes/Comment.php:124 lib/classes/Post.php:395
+#: lib/classes/Comment.php:124 lib/classes/Post.php:361
 msgid "g:i a"
 msgstr ""
 
 #.  GMT Date/Time Format (e.g. 2012-01-08T17:00:20+00:00)
-#: lib/classes/Comment.php:132 lib/classes/Post.php:403
+#: lib/classes/Comment.php:132 lib/classes/Post.php:369
 msgid "c"
 msgstr ""
 
-#: lib/classes/Comment.php:170 lib/classes/Page.php:100
-#: lib/classes/Post.php:222
+#: lib/classes/Comment.php:170 lib/classes/Wordpress.php:567
 msgid "Edit"
 msgstr ""
 
@@ -191,58 +190,62 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: lib/classes/List_Comment.php:84
+#: lib/classes/List_Comment.php:85
 msgid "Comments: "
 msgstr ""
 
 # &laquo; is an left arrow in ASCII
-#: lib/classes/List_Post.php:45
+#: lib/classes/List_Post.php:48
 msgid "&laquo; Newer Entries"
 msgstr ""
 
 # &raquo; is an right arrow in ASCII
-#: lib/classes/List_Post.php:46
+#: lib/classes/List_Post.php:49
 msgid "Older Entries &raquo;"
 msgstr ""
 
+#: lib/classes/List_Post.php:51
+msgid "Page"
+msgstr ""
+
 # &rsquo; is an apostrophe/single quote in ASCII
-#: lib/classes/List_Post.php:68
+#: lib/classes/List_Post.php:77
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: lib/classes/List_Post.php:70
+#: lib/classes/List_Post.php:79
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: lib/classes/List_Post.php:74
+#: lib/classes/List_Post.php:83
 msgid "Nothing Found"
 msgstr ""
 
-#: lib/classes/List_Post.php:102
+#: lib/classes/List_Post.php:111
 msgid "Search Results: "
 msgstr ""
 
-#: lib/classes/List_Post.php:105
+#: lib/classes/List_Post.php:114
 msgid "Category: "
 msgstr ""
 
-#: lib/classes/List_Post.php:107
+#: lib/classes/List_Post.php:116
 msgid "Tag: "
 msgstr ""
 
-#: lib/classes/List_Post.php:109
+#: lib/classes/List_Post.php:118
 msgid "Author"
 msgstr ""
 
-#: lib/classes/List_Post.php:111
+#: lib/classes/List_Post.php:120
 msgid "Archive: "
 msgstr ""
 
-#: lib/classes/List_Post.php:114
+#: lib/classes/List_Post.php:123
 msgid "Welcome"
 msgstr ""
 
@@ -285,27 +288,27 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: lib/classes/Post.php:244
+#: lib/classes/Post.php:215
 msgid " Comments"
 msgstr ""
 
-#: lib/classes/Post.php:305
+#: lib/classes/Post.php:275
 msgid "Posted in "
 msgstr ""
 
-#: lib/classes/Post.php:331
+#: lib/classes/Post.php:298
 msgid "Tagged in "
 msgstr ""
 
-#: lib/classes/Post.php:398
+#: lib/classes/Post.php:365
 msgid "Published "
 msgstr ""
 
-#: lib/classes/Post.php:428
+#: lib/classes/Post.php:394
 msgid "Post Thumbnail"
 msgstr ""
 
-#: lib/classes/Post.php:429
+#: lib/classes/Post.php:395
 msgid "No image available for "
 msgstr ""
 
@@ -339,6 +342,6 @@ msgstr ""
 msgid "View not found:"
 msgstr ""
 
-#: lib/classes/Wordpress.php:544
+#: lib/classes/Wordpress.php:624
 msgid "Pages:"
 msgstr ""

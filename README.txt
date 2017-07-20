@@ -2,7 +2,7 @@
 Contributors: Lisa Bernhardt
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.8
-Version: 7.03
+Version: 7.04
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -79,6 +79,15 @@ Licenses: Creative Commons Attribution 3.0 (CC BY-SA 3.0)
 Source: http://subtlepatterns.com/light-honeycomb/
 
 == Changelog ==
+
+= 7.04 =
+* Released: July 19, 2017
+
+- Added a print specific style.
+- Consolidated image usage to centralized functions in the Wordpress class.
+- Added screen reader text style when user is focused on the screen reader link.
+- Added screen reader text to 'Edit' links to include the post's title.
+- Added screen reader text to pagination links to include 'Page' before the number for readability.
 
 = 7.03 =
 * Released: July 17, 2017
