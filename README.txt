@@ -2,7 +2,7 @@
 Contributors: Lisa Bernhardt
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.8
-Version: 7.04
+Version: 7.05
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -79,6 +79,11 @@ Licenses: Creative Commons Attribution 3.0 (CC BY-SA 3.0)
 Source: http://subtlepatterns.com/light-honeycomb/
 
 == Changelog ==
+
+= 7.05 =
+* Released: August 23, 2018
+
+- Added Instagram to the social media widget
 
 = 7.04 =
 * Released: July 19, 2017
