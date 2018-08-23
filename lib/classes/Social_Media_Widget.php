@@ -61,6 +61,10 @@ class Social_Media_Widget extends WP_Widget {
 			'name' => 'Tumblr',
 			'icon' => 'tumblr-dreamstale70.png',
 		],
+		'instagram' => [
+			'name' => 'Instagram',
+			'icon' => 'instagram-dreamstale43.png',
+		],
 	];
 
 	/**
@@ -75,6 +79,7 @@ class Social_Media_Widget extends WP_Widget {
 		'url_youtube' => '',
 		'url_github' => '',
 		'url_tumblr' => '',
+		'url_instagram' => '',
 	];
 
 	/**
