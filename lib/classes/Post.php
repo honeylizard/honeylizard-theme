@@ -189,6 +189,7 @@ class Post {
 	 */
 	public function renderGridItemView($classes = '') {
 		$view_variables = [
+			'key' => $this->id,
 			'column_class' => $classes,
 			'thumbnail_alt_text' => $this->getReadMoreText(),
 			'thumbnail' => $this->thumbnail,
@@ -223,10 +224,9 @@ class Post {
 	 * @return string
 	 */
 	private function getReadMoreLink() {
-		return '<p>' . '<a href="' . $this->url . '" class="more-link button-link">'
+		return '<p>' . '<a href="' . $this->url . '" class="more-link button-link" aria-describedby="post-title-' . $this->id . '">'
 		       . $this->url_text
-		       . '<span class="screen-reader-text"> - ' . $this->title . '</span>'
-		       . '<span class="meta-nav">&raquo;</span>'
+		       . '<span class="meta-nav" aria-hidden="true">&nbsp;&raquo;</span>'
 		       . '</a>' . '</p>';
 	}
 
