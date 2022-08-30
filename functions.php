@@ -232,6 +232,8 @@ function honeylizard_get_head_meta() {
 		    'normalize_stylesheet' => $wordpress->getThemePath() . '/lib/vendor/normalize/normalize.min.css',
 		    'theme_stylesheet' => $wordpress->getThemeStylesheet(),
             'theme_print_stylesheet' => $wordpress->getThemePath() . '/print.css',
+			'manifest_file' => $wordpress->getThemePath() . '/manifest.json',
+			'theme_color' => '#' . get_background_color(),
 	    ];
 
 	    $view = new View('head', $view_variables);

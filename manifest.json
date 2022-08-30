@@ -1,0 +1,46 @@
+{
+    "name": "Honeylizard",
+    "icons": [
+      {
+        "src": "assets/favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "assets/favicon-57x57.png",
+        "type": "image/png",
+        "sizes": "57x57"
+      },
+      {
+        "src": "assets/favicon-72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "assets/favicon-114x114.png",
+        "type": "image/png",
+        "sizes": "114x114"
+      },
+      {
+        "src": "assets/favicon-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "assets/favicon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/favicon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#303030",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#FFCA28"
+  }
