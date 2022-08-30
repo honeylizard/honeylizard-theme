@@ -10,15 +10,20 @@ class Front extends Page {
 	protected $view_template = 'front';
 
 	/**
-	 * @var string $sidebar_social   The sidebar that will be shown below the page content.
+	 * @var string $social_banner   The widget area that will be shown below the page content and above the categories.
 	 */
-	private $sidebar_social = '';
+	private $social_banner = '';
+
+	/**
+	 * @var string $embed_banner   The widget area that will be shown below the categories.
+	 */
+	private $embed_banner = '';
 
 
-	public function __construct($page_id = 0, $sidebar = '') {
-		parent::__construct($page_id, $sidebar);
-		$this->sidebar_social = $sidebar;
-		$this->sidebar_right = '';
+	public function __construct($page_id = 0, $social_banner_widget = '', $embed_banner_widget = '') {
+		parent::__construct($page_id, $social_banner_widget);
+		$this->social_banner = $social_banner_widget;
+		$this->embed_banner = $embed_banner_widget;
 	}
 
 	/**
@@ -35,10 +40,10 @@ class Front extends Page {
 			'title' => $this->title,
 			'header_image' => Wordpress::getHeaderImageHtml(get_header_image()),
 			'content' => $this->content,
-			'sidebar' => $this->sidebar_right,
-			'social_sidebar' => $this->sidebar_social,
+			'social_banner' => $this->social_banner,
 			'edit_link' => Wordpress::getAdminEditLink($this->id),
 			'categories_preview' => $this->renderCategoriesView(),
+			'embed_banner' => $this->embed_banner,
 		];
 
 		$view = new View($this->view_template, $view_variables);

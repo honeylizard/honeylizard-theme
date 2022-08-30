@@ -14,14 +14,25 @@
 				</div> <!-- .page-content -->
 			</div> <!-- .page -->
 	</div> <!-- .wrapper -->
-    <div class="social-bar-front clear-all">
-        <div class="wrapper">
-            <div class="social-bar-front-widgets">
-	            <?php echo $social_sidebar; ?>
-            </div> <!-- .social-bar-front-widgets -->
-        </div> <!-- .wrapper -->
-    </div> <!-- .footer-front -->
+    <?php if ($social_banner) { ?>
+        <div class="social-bar-front clear-all">
+            <div class="wrapper">
+                <div class="social-bar-front-widgets">
+                    <?php echo $social_banner; ?>
+                </div> <!-- .social-bar-front-widgets -->
+            </div> <!-- .wrapper -->
+        </div> <!-- .social-bar-front -->
+    <?php } ?>
     <div class="category_preview">
         <?php echo $categories_preview; ?>
-    </div>
+    </div> <!-- .category_preview -->
+    <?php if ($embed_banner) { ?>
+        <div class="embed-bar-front clear-all">
+            <div class="wrapper">
+                <div class="embed-bar-front-widgets">
+                    <?php echo $embed_banner; ?>
+                </div> <!-- .embed-bar-front-widgets -->
+            </div> <!-- .wrapper -->
+        </div> <!-- .embed-bar-front -->
+    <?php } ?>
 </div> <!-- #content .content -->

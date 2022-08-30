@@ -4,10 +4,10 @@
 # Lisa Bernhardt <lisa@honeylizard.com>, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: Honeylizard 7.0\n"
+"Project-Id-Version: Honeylizard 7.07\n"
 "Report-Msgid-Bugs-To: http://www.honeylizard.com\n"
 "POT-Creation-Date: 2017-06-27 15:41-0400\n"
-"PO-Revision-Date: 2017-07-19 21:35-0500\n"
+"PO-Revision-Date: 2022-08-30 12:33-0500\n"
 "Last-Translator: Lisa Bernhardt <lisa@honeylizard.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Eazy Po 0.9.5.3\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
 
 #: customizer.php:69
 msgid "Theme Specific Settings"
@@ -55,11 +55,11 @@ msgstr ""
 "Applies the Google Analytics hook. The ID can be found under your Google "
 "Analytics Settings."
 
-#: functions.php:111
+#: functions.php:113
 msgid "Footer"
 msgstr "Footer"
 
-#: functions.php:113
+#: functions.php:115
 msgid ""
 "Widgets in this area will be shown in the footer. This is not shown on the "
 "front page."
@@ -67,41 +67,55 @@ msgstr ""
 "Widgets in this area will be shown in the footer. This is not shown on the "
 "front page."
 
-#: functions.php:120
+#: functions.php:122
 msgid "Right Hand Sidebar"
 msgstr "Right Hand Sidebar"
 
-#: functions.php:122
+#: functions.php:124
 msgid "Widgets in this area will be shown on the right-hand side."
 msgstr "Widgets in this area will be shown on the right-hand side."
 
-#: functions.php:129
+#: functions.php:131
 msgid "Footer (Front-Page)"
 msgstr "Footer (Front-Page)"
 
-#: functions.php:131
+#: functions.php:133
 msgid "Widgets in this area will be shown in the front page footer."
 msgstr "Widgets in this area will be shown in the front page footer."
 
-#: functions.php:138
+#: functions.php:140
 msgid "Social Bar (Front-Page)"
 msgstr "Social Bar (Front-Page)"
 
-#: functions.php:140
+#: functions.php:142
 msgid ""
-"Widgets in this area will be shown in the front page right below the content."
+"Widgets in this area will be shown in the front page right below the content "
+"and before the categories."
 msgstr ""
-"Widgets in this area will be shown in the front page right below the content."
+"Widgets in this area will be shown in the front page right below the content "
+"and before the categories."
 
-#: functions.php:207
+#: functions.php:149
+msgid "Embed Bar (Front-Page)"
+msgstr "Embed Bar (Front-Page)"
+
+#: functions.php:151
+msgid ""
+"Widgets in this area will be shown in the front page right below the "
+"categories."
+msgstr ""
+"Widgets in this area will be shown in the front page right below the "
+"categories."
+
+#: functions.php:218
 msgid "Main Navigation"
 msgstr "Main Navigation"
 
-#: functions.php:307
+#: functions.php:320
 msgid "Menu Description"
 msgstr "Menu Description"
 
-#: functions.php:309
+#: functions.php:322
 msgid ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
@@ -109,11 +123,11 @@ msgstr ""
 "This field is used within a navigation menu and provides extra information "
 "for users."
 
-#: functions.php:310
+#: functions.php:323
 msgid "Show on Home Page"
 msgstr "Show on Home Page"
 
-#: functions.php:312
+#: functions.php:325
 msgid ""
 "Toggle whether the category appears on the front/home page. It will show the "
 "name of the cateogry, the description, along with a set of the latest posts "
@@ -308,7 +322,7 @@ msgstr "&mdash; Select &mdash;"
 msgid "Read More"
 msgstr "Read More"
 
-#: lib/classes/Post.php:215
+#: lib/classes/Post.php:216
 msgid " Comments"
 msgstr " Comments"
 
@@ -332,27 +346,27 @@ msgstr "Post Thumbnail"
 msgid "No image available for "
 msgstr "No image available for "
 
-#: lib/classes/Social_Media_Widget.php:85
+#: lib/classes/Social_Media_Widget.php:90
 msgid "A list of social media icon links."
 msgstr "A list of social media icon links."
 
-#: lib/classes/Social_Media_Widget.php:88
+#: lib/classes/Social_Media_Widget.php:93
 msgid "Social Media Widget"
 msgstr "Social Media Widget"
 
-#: lib/classes/Social_Media_Widget.php:130
+#: lib/classes/Social_Media_Widget.php:135
 msgid "Connect with me on social media."
 msgstr "Connect with me on social media."
 
-#: lib/classes/Social_Media_Widget.php:192
+#: lib/classes/Social_Media_Widget.php:197
 msgid "URL"
 msgstr "URL"
 
-#: lib/classes/Social_Media_Widget.php:208
+#: lib/classes/Social_Media_Widget.php:213
 msgid "Title"
 msgstr "Title"
 
-#: lib/classes/Social_Media_Widget.php:211
+#: lib/classes/Social_Media_Widget.php:216
 msgid ""
 "Enter the URL for the social media account to include it in the list. If the "
 "URL is empty, the icon will not appear in the list."

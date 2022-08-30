@@ -17,7 +17,27 @@ spl_autoload_register('autoload_class');
  * @param string $class_name    The name of the class.
  */
 function autoload_class($class_name) {
-	if ( !in_array($class_name, ['WP_Site_Health', 'WP_Automatic_Updater']) ) {
+	if ( in_array(
+			$class_name, [
+				'Analytics',
+				'Author',
+				'Category',
+				'Comment',
+				'Error_Page',
+				'Front',
+				'Header',
+				'List_Comment',
+				'List_Post',
+				'Main_Navigation',
+				'Menu_Widget',
+				'Page',
+				'Post',
+				'Social_Media_Widget',
+				'View',
+				'Wordpress'
+			]
+		)
+	) {
     	include get_template_directory() . '/lib/classes/' . $class_name . '.php';
 	}
 }
@@ -139,7 +159,16 @@ function honeylizard_widgets_init() {
 			[
 				'name' => __('Social Bar (Front-Page)', 'honeylizard'),
 				'id' => 'social-bar-front',
-				'description' => __('Widgets in this area will be shown in the front page right below the content.', 'honeylizard'),
+				'description' => __('Widgets in this area will be shown in the front page right below the content and before the categories.', 'honeylizard'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>'
+			]
+		);
+		register_sidebar(
+			[
+				'name' => __('Embed Bar (Front-Page)', 'honeylizard'),
+				'id' => 'embed-bar-front',
+				'description' => __('Widgets in this area will be shown in the front page right below the categories.', 'honeylizard'),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget' => '</div>'
 			]
