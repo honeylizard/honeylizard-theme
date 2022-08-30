@@ -485,7 +485,7 @@ class Wordpress {
 			$html .= '<span class="screen-reader-text">' . $text . '</span>';
 		}
 		if (! empty($icon_src)) {
-			$html .= '<img class="screen-reader-icon" src="' . $icon_src . '" aria-hidden alt="" role="presentation">';
+			$html .= '<img class="screen-reader-icon" src="' . $icon_src . '" alt="" role="presentation">';
 		}
 		return $html;
 	}
@@ -503,7 +503,7 @@ class Wordpress {
 		if (! empty($image_src)) {
 			$html .= '<img class="aligncenter" src="' . $image_src . '"';
 			if (empty($alt)) {
-				$html .= ' aria-hidden alt=""';
+				$html .= ' alt=""';
 			} else {
 				$html .= ' alt="' . $alt . '"';
 			}
