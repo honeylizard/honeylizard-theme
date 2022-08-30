@@ -17,7 +17,9 @@ spl_autoload_register('autoload_class');
  * @param string $class_name    The name of the class.
  */
 function autoload_class($class_name) {
-    include get_template_directory() . '/lib/classes/' . $class_name . '.php';
+	if ( !in_array($class_name, ['WP_Site_Health', 'WP_Automatic_Updater']) ) {
+    	include get_template_directory() . '/lib/classes/' . $class_name . '.php';
+	}
 }
 
 if (wp_get_theme()->Name == 'Honeylizard') {
